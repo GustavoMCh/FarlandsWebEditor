@@ -4,7 +4,7 @@
 import { useSaveData } from '@/components/utils/useSaveData';
 
 export default function FileLoader() {
-  const { setSavedData, setCurrentSlotIndex,setLoadedFromFile} = useSaveData(); 
+  const { setSavedData, setCurrentSlotIndex, setLoadedFromFile } = useSaveData();
 
   const handleFile = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -16,12 +16,12 @@ export default function FileLoader() {
       try {
         const data = JSON.parse(e.target?.result as string);
         if (!data.gameData?.slotData) throw new Error("❌ Formato inválido");
-      
-        console.log("✅ Datos preparados ",{data});
+
+        console.log("✅ Datos preparados ", { data });
         setSavedData(data);
         console.log("✅ Datos guardado ");
         setCurrentSlotIndex(data.currentSlot || -1);
-        console.log("✅ Estableciendo partida:",{data.currentSlot || -1});
+        console.log("✅ Estableciendo partida:", data.currentSlot || -1);
         setLoadedFromFile(true);
       } catch (err) {
         console.error("❌ Error al parsear el archivo:", err);
