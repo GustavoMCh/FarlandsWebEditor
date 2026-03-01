@@ -1,0 +1,31 @@
+{
+  "season": "Fría",
+  "title": "Guía de Cultivos - Estación Fría",
+  "intro": "Como ya está dicho en la descripción de la guía, recopilaré diferente información útil de los cultivos de Farlands.<br><br><strong>Información recopilada:</strong><br><em>Precio Compra (PC)</em> | <em>Precio Venta (PV)</em> | <em>Tiempo de Crecimiento (TC)</em> | <em>Características Especiales (CE)</em><br><em>Mantiene la Planta (MP)</em>: <em>Tiempo de Recarga (TR)</em><br><em>Múltiple Cosecha (MC)</em> (Más de un fruto por cosecha):<br>&nbsp;&nbsp;<em>Mínimo Obtenible (MinR)</em> | <em>Máximo Obtenible (MaxR)</em><br><br>También se agregará información del vendedor de la semilla.<br><strong>Nota:</strong> La información de compra no se incluye para las semillas exclusivas del vendedor ambulante por su aleatoriedad en el precio.<br><br><strong>Reglas de Redacción:</strong><br>Se utilizarán las siglas de cada dato al explicar algo para facilitar las cosas.<br>Todos los datos son extraídos directamente del gameplay del juego, no he revisado código del juego ni nada, así que todos los datos están sujetos a errores humanos.<br>Si encuentras algún error o dato faltante en la guía, avísame y lo corregiré!<br><br><strong>Cabe aclarar:</strong> Todo esto puede cambiar muchísimo debido a que el juego se encuentra en Alpha. A medida que actualicen el juego, yo iré actualizando la guía poco a poco.<br><br>Sin más que decir, comencemos la guía!",
+  "plants": [
+    {"name": "Cactus", "PC": 25, "PV": 85, "TC": 15, "CE": "MP", "TR": 3},
+    {"name": "Crisful", "PC": 5, "PV": 55, "TC": 5, "CE": "Ninguna"},
+    {"name": "Conduri", "PC": 20, "PV": 320, "TC": 15, "CE": "Ninguna", "nota": "Es muy buen combustible (35% carga)"},
+    {"name": "Penrose", "PC": 15, "PV": 55, "TC": 5, "CE": "MC", "MinR": 2, "MaxR": 4},
+    {"name": "Cuadrachofa", "PC": 10, "PV": 110, "TC": 10, "CE": "Ninguna"},
+    {"name": "Solaria", "PC": "?", "PV": 85, "TC": 5, "CE": "Ninguna"},
+    {
+      "name": "Semilla Variada",
+      "PC": "Ninguno",
+      "obtencion": "Tu Planeta, Terbin, Cajas/Barril",
+      "obtencionRenovable": "Galea/Bohr",
+      "PV": "Depende",
+      "TC": "Depende",
+      "CE": "Depende",
+      "cosechasPosibles": ["Crisful", "Cactus", "Conduri"]
+    }
+  ],
+  "bestOptions": [
+    {"name": "Penrose", "valorCultivo": "MinR 9900-19800 MaxR", "cosechasPorEstacion": 5, "valorTotal": "MinR 49500-99000 MaxR", "diasSobrantes": 3, "nota": "Recordar que esta planta tiene MC"},
+    {"name": "Cactus", "valorCultivo": 7650, "cosechasPorEstacion": 5, "valorTotal": 38250, "diasSobrantes": 1},
+    {"name": "Conduri", "valorCultivo": 28800, "cosechasPorEstacion": 1, "valorTotal": 28800, "diasSobrantes": 13},
+    {"name": "Crisful", "valorCultivo": 4950, "cosechasPorEstacion": 5, "valorTotal": 24750, "diasSobrantes": 3},
+    {"name": "Cuadrachofa", "valorCultivo": 9900, "cosechasPorEstacion": 2, "valorTotal": 19800, "diasSobrantes": 8},
+    {"name": "Solaria", "valorCultivo": 7650, "cosechasPorEstacion": 5, "valorTotal": 38250, "diasSobrantes": 3, "nota": "Al ser una venta única del vendedor ambulante su compra es muy limitada"}
+  ]
+}

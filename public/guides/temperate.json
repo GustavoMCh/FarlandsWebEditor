@@ -1,0 +1,31 @@
+{
+  "season": "Templada",
+  "title": "Guía de Cultivos - Estación Templada",
+  "intro": "Como ya está dicho en la descripción de la guía, recopilaré diferente información útil de los cultivos de Farlands.<br><br><strong>Información recopilada:</strong><br><em>Precio Compra (PC)</em> | <em>Precio Venta (PV)</em> | <em>Tiempo de Crecimiento (TC)</em> | <em>Características Especiales (CE)</em><br><em>Mantiene la Planta (MP)</em>: <em>Tiempo de Recarga (TR)</em><br><em>Múltiple Cosecha (MC)</em> (Más de un fruto por cosecha):<br>&nbsp;&nbsp;<em>Mínimo Obtenible (MinR)</em> | <em>Máximo Obtenible (MaxR)</em><br><br>También se agregará información del vendedor de la semilla.<br><strong>Nota:</strong> La información de compra no se incluye para las semillas exclusivas del vendedor ambulante por su aleatoriedad en el precio.<br><br><strong>Reglas de Redacción:</strong><br>Se utilizarán las siglas de cada dato al explicar algo para facilitar las cosas.<br>Todos los datos son extraídos directamente del gameplay del juego, no he revisado código del juego ni nada, así que todos los datos están sujetos a errores humanos.<br>Si encuentras algún error o dato faltante en la guía, avísame y lo corregiré!<br><br><strong>Cabe aclarar:</strong> Todo esto puede cambiar muchísimo debido a que el juego se encuentra en Alpha. A medida que actualicen el juego, yo iré actualizando la guía poco a poco.<br><br>Sin más que decir, comencemos la guía!",
+  "plants": [
+    {"name": "Vulcitania", "PC": 5, "PV": 35, "TC": 5, "CE": "Ninguna"},
+    {"name": "Galleta", "PC": 10, "PV": 90, "TC": 10, "CE": "Ninguna"},
+    {"name": "Blóbulo", "PC": 15, "PV": 35, "TC": 5, "CE": "MC", "MinR": 2, "MaxR": 4},
+    {"name": "Bólaro", "PC": 25, "PV": 65, "TC": 15, "CE": "MP", "TR": 3},
+    {"name": "Icosemillas", "PC": 20, "PV": 270, "TC": 15, "CE": "Ninguna"},
+    {"name": "Piramidales", "PC": "?", "PV": 110, "TC": 10, "CE": "MP", "TR": 2},
+    {
+      "name": "Semilla Variada",
+      "PC": "Ninguno",
+      "obtencion": "Tu Planeta, Terbin, Cajas/Barril",
+      "obtencionRenovable": "Galea/Bohr",
+      "PV": "Depende",
+      "TC": "Depende",
+      "CE": "Depende",
+      "cosechasPosibles": ["Vulcitania", "Icosemillas", "Bólaro"]
+    }
+  ],
+  "bestOptions": [
+    {"name": "Blóbulo", "valorCultivo": "MinR 6300-12600 MaxR", "cosechasPorEstacion": 5, "valorTotal": "MinR 31500-63000 MaxR", "diasSobrantes": 3, "nota": "Recordar que esta planta tiene MC"},
+    {"name": "Bólaro", "valorCultivo": 5850, "cosechasPorEstacion": 5, "valorTotal": 29250, "diasSobrantes": 1},
+    {"name": "Icosemillas", "valorCultivo": 24300, "cosechasPorEstacion": 1, "valorTotal": 24300, "diasSobrantes": 13},
+    {"name": "Galleta", "valorCultivo": 8100, "cosechasPorEstacion": 2, "valorTotal": 16200, "diasSobrantes": 8},
+    {"name": "Vulcitania", "valorCultivo": 3150, "cosechasPorEstacion": 5, "valorTotal": 15750, "diasSobrantes": 3},
+    {"name": "Piramidales", "valorCultivo": 9900, "cosechasPorEstacion": 10, "valorTotal": 89100, "diasSobrantes": 0, "nota": "Al ser una venta única del vendedor ambulante su compra es muy limitada"}
+  ]
+}

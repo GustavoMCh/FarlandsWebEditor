@@ -1,0 +1,31 @@
+{
+  "season": "Cálida",
+  "title": "Guía de Cultivos - Estación Cálida",
+  "intro": "Como ya está dicho en la descripción de la guía, recopilaré diferente información útil de los cultivos de Farlands...",
+  "plants": [
+    {"name": "Fruta Temporal", "PC": 10, "PV": 45, "TC": 5, "CE": "Ninguna"},
+    {"name": "Azafrán Bumerang", "PC": 15, "PV": 45, "TC": 5, "CE": "MC", "MinR": 2, "MaxR": 4},
+    {"name": "Mollifruta", "PC": 25, "PV": 75, "TC": 15, "CE": "MP", "TR": 3},
+    {"name": "Cucuí", "PC": 10, "PV": 100, "TC": 10, "CE": "Ninguna"},
+    {"name": "Globolabaza", "PC": 20, "PV": 300, "TC": 15, "CE": "Ninguna"},
+    {"name": "Kuriq", "PC": "?", "PV": 150, "TC": 10, "CE": "Ninguna"},
+    {
+      "name": "Semilla Variada",
+      "PC": "Ninguno",
+      "obtencion": "Tu Planeta, Terbin, Cajas/Barril",
+      "obtencionRenovable": "Galea/Bohr",
+      "PV": "Depende",
+      "TC": "Depende",
+      "CE": "Depende",
+      "cosechasPosibles": ["Fruto Temporal", "Globolabaza", "Mollifruta"]
+    }
+  ],
+  "bestOptions": [
+    {"name": "Azafrán Bumerang", "valorCultivo": "MinR 8100-16200 MaxR", "cosechasPorEstacion": 5, "valorTotal": "MinR 40500-81000 MaxR", "diasSobrantes": 3, "nota": "Recordar que esta planta tiene MC"},
+    {"name": "Mollifruta", "valorCultivo": 6750, "cosechasPorEstacion": 7, "valorTotal": 47250, "diasSobrantes": 0},
+    {"name": "Globolabaza", "valorCultivo": 27000, "cosechasPorEstacion": 1, "valorTotal": 27000, "diasSobrantes": 13},
+    {"name": "Fruta Temporal", "valorCultivo": 4050, "cosechasPorEstacion": 5, "valorTotal": 20250, "diasSobrantes": 3},
+    {"name": "Cucuí", "valorCultivo": 9000, "cosechasPorEstacion": 2, "valorTotal": 18000, "diasSobrantes": 8},
+    {"name": "Kuriq", "valorCultivo": 13500, "cosechasPorEstacion": 2, "valorTotal": 27000, "diasSobrantes": 8, "nota": "Al ser una venta única del vendedor ambulante su compra es muy limitada"}
+  ]
+}

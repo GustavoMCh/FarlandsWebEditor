@@ -1,0 +1,2792 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Hacha",
+      "procesar": "+0%"
+    },
+    {
+      "id": 2,
+      "name": "Azada",
+      "procesar": "+0%"
+    },
+    {
+      "id": 3,
+      "name": "Pico",
+      "procesar": "+0%"
+    },
+    {
+      "id": 4,
+      "name": "Hoz",
+      "procesar": "+0%"
+    },
+    {
+      "id": 5,
+      "name": "Caña de pescar",
+      "procesar": "+0%"
+    },
+    {
+      "id": 6,
+      "name": "Red",
+      "procesar": "+0%"
+    },
+    {
+      "id": 7,
+      "name": "Madera",
+      "procesar": "+3%"
+    },
+    {
+      "id": 8,
+      "name": "Hierba",
+      "procesar": "+2%",
+      "type":"Hortalizas: No Cultivos",
+      "get":" Granja, Cajas"
+    },
+    {
+      "id": 9,
+      "name": "Sabia",
+      "procesar": "+0%"
+    },
+    {
+      "id": 10,
+      "name": "Piedra",
+      "procesar": "+1%",
+      "type":"Hortalizas: No Cultivos",
+      "get":"Gorg, Granja, Bohr, Galea, Hafnir, Cajas"
+
+    },
+    {
+      "id": 11,
+      "name": "Geoda",
+      "procesar": "+2%"
+    },
+    {
+      "id": 12,
+      "name": "Carbon",
+      "procesar": "+15%"
+    },
+    {
+      "id": 13,
+      "name": "Turba",
+      "procesar": "+0%"
+    },
+    {
+      "id": 14,
+      "name": "Piña",
+      "procesar": "+5%",
+      "type":"Hortalizas: No Cultivos",
+      "get":"Cajas, Arboles Normales (Granja)"
+    },
+    {
+      "id": 15,
+      "name": "Semillas de fruta temporal",
+      "procesar": "+0%"
+    },
+    {
+      "id": 16,
+      "name": "Fruto temporal",
+      "procesar": "+0%"
+    },
+    {
+      "id": 17,
+      "name": "Semillas variadas",
+      "procesar": "+3%"
+    },
+    {
+      "id": 18,
+      "name": "Cobre",
+      "procesar": "+0%"
+    },
+    {
+      "id": 19,
+      "name": "Plata",
+      "procesar": "+0%"
+    },
+    {
+      "id": 20,
+      "name": "Chatarra",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 21,
+      "name": "Pieza de recambio",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 22,
+      "name": "Regadera",
+      "procesar": "+0%"
+    },
+    {
+      "id": 23,
+      "name": "Semillas de Caotus",
+      "procesar": "+0%"
+    },
+    {
+      "id": 24,
+      "name": "Semillas de Azafran Bumerang",
+      "procesar": "+0%"
+    },
+    {
+      "id": 25,
+      "name": "Semillas de Queso Vegano",
+      "procesar": "+0%"
+    },
+    {
+      "id": 26,
+      "name": "Semillas de Limo",
+      "procesar": "+0%"
+    },
+    {
+      "id": 27,
+      "name": "Flor de Caotus",
+      "procesar": "+0%"
+    },
+    {
+      "id": 28,
+      "name": "Azafrán Booemrang",
+      "procesar": "+5%"
+    },
+    {
+      "id": 29,
+      "name": "Queso VeganoS",
+      "procesar": "+0%"
+    },
+    {
+      "id": 30,
+      "name": "Fruto Slime",
+      "procesar": "+0%"
+    },
+    {
+      "id": 31,
+      "name": "Seta Bohrlana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 32,
+      "name": "Rosa de Terbin",
+      "procesar": "+25%",
+      "type":"Hortalizas: No Cultivos",
+      "get":"Terbin"
+    },
+    {
+      "id": 33,
+      "name": "Zafiro",
+      "procesar": "+0%"
+    },
+    {
+      "id": 34,
+      "name": "Rubí",
+      "procesar": "+0%"
+    },
+    {
+      "id": 35,
+      "name": "Citrino",
+      "procesar": "+0%"
+    },
+    {
+      "id": 36,
+      "name": "Ciroón",
+      "procesar": "+0%"
+    },
+    {
+      "id": 37,
+      "name": "Sugilita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 38,
+      "name": "Esmeralda",
+      "procesar": "+0%"
+    },
+    {
+      "id": 39,
+      "name": "Pelusa de Murlusa",
+      "procesar": "+0%"
+    },
+    {
+      "id": 40,
+      "name": "Cristalinita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 41,
+      "name": "Cronio",
+      "procesar": "+0%"
+    },
+    {
+      "id": 42,
+      "name": "Oro",
+      "procesar": "+0%"
+    },
+    {
+      "id": 43,
+      "name": "Mitrilo",
+      "procesar": "+20%"
+    },
+    {
+      "id": 44,
+      "name": "Fludirita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 45,
+      "name": "Oxigenio",
+      "procesar": "+0%"
+    },
+    {
+      "id": 46,
+      "name": "Resonita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 47,
+      "name": "Luminita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 48,
+      "name": "Kassimerita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 49,
+      "name": "Magma Cristalizado",
+      "procesar": "+0%"
+    },
+    {
+      "id": 50,
+      "name": "Bismuto",
+      "procesar": "+0%"
+    },
+    {
+      "id": 51,
+      "name": "Vidrio Solar",
+      "procesar": "+0%"
+    },
+    {
+      "id": 52,
+      "name": "Singularita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 53,
+      "name": "Apalescita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 54,
+      "name": "Lumidotita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 55,
+      "name": "Celestio",
+      "procesar": "+0%"
+    },
+    {
+      "id": 56,
+      "name": "Lengualga",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Galea, Vendedor Ambulante"
+    },
+    {
+      "id": 57,
+      "name": "Rogoluz",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 58,
+      "name": "Pargo Peludo",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Bohr"
+    },
+    {
+      "id": 59,
+      "name": "Pez Pato",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Galea, Goddol, Vendedor Ambulante"
+    },
+    {
+      "id": 60,
+      "name": "Medusa linterna",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Bohr, Vendedor Ambulante"
+    },
+    {
+      "id": 61,
+      "name": "Clisea",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 62,
+      "name": "Caracol de mar",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 63,
+      "name": "Unibi",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Galea,Vendedor Ambulante"
+    },
+    {
+      "id": 64,
+      "name": "Tilipio",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Galea, Goddol, Vendedor Ambulante"
+    },
+    {
+      "id": 65,
+      "name": "Trucha Troyana",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 66,
+      "name": "Carpín Manguito",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Bohr, Vendedor Ambulante"
+    },
+    {
+      "id": 67,
+      "name": "Caballito magmático",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 68,
+      "name": "Sardina voladora",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 69,
+      "name": "Tiburón Caña",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": " Vendedor Ambulante"
+    },
+    {
+      "id": 70,
+      "name": "Pulpunk",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": ""
+    },
+    {
+      "id": 71,
+      "name": "Tiburón de Obsidiana",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 72,
+      "name": "Magmar",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 73,
+      "name": "Glaciablob",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 74,
+      "name": "Geodautilo",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Hafnir, Vendedor Ambulante"
+    },
+    {
+      "id": 75,
+      "name": "Alguila",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 76,
+      "name": "Pez Aleta de Gancho",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Galea, Vendedor Ambulante"
+    },
+    {
+      "id": 77,
+      "name": "Skupo",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Granja, Vendedor Ambulante"
+    },
+    {
+      "id": 78,
+      "name": "Cristarma",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 79,
+      "name": "Butanco",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 80,
+      "name": "Opabinia",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 81,
+      "name": "Esturión Erizo",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 82,
+      "name": "Pez cola de fuego",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 83,
+      "name": "Nemorquina",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 84,
+      "name": "Escairón",
+      "procesar": "+0%", 
+      "type": "Peces",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 85,
+      "name": "Pez hada",
+      "procesar": "+0%", 
+      "type": "insecto",
+      "get": "Bohr, Goddol"
+    },
+    {
+      "id": 86,
+      "name": "Libélula nadadora",
+      "procesar": "+0%", 
+      "type": "insecto",
+      "get": "Galea, Vendedor Ambulante"
+    },
+    {
+      "id": 87,
+      "name": "Luciérnaga bohriana",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Bohr, Vendedor Ambulante"
+    },
+    {
+      "id": 88,
+      "name": "Nebuposa",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Goddol, Vendedor Ambulante"
+    },
+    {
+      "id": 89,
+      "name": "Insecto ígneo",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Hafnir"
+    },
+    {
+      "id": 90,
+      "name": "Cataña",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Galea, Vendedor Ambulante"
+    },
+    {
+      "id": 91,
+      "name": "Polilla de algodón",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Terbin, Vendedor Ambulante"
+    },
+    {
+      "id": 92,
+      "name": "Mosquito hinchado",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": " Bohr, Vendedor Ambulante"
+    },
+    {
+      "id": 93,
+      "name": "Tintinojo",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Terbin"
+    },
+    {
+      "id": 94,
+      "name": "Cigarra Diamante",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Hafnir, Vendedor Ambulante"
+    },
+    {
+      "id": 95,
+      "name": "Ninfa Azabache",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Bohr, Hafnir, Vendedor Ambulante"
+    },
+    {
+      "id": 96,
+      "name": "Medusa volador",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Bohr"
+    },
+    {
+      "id": 97,
+      "name": "Bulbo volador",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Galea"
+    },
+    {
+      "id": 98,
+      "name": "Bicho burbuja",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Terbin"
+    },
+    {
+      "id": 99,
+      "name": "Fluffusk",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Galea, Vendedor Ambulante"
+    },
+    {
+      "id": 100,
+      "name": "Ragnato",
+      "procesar": "+0%",
+      "type":"insecto",
+      "get": "Goddol, Vendedor Ambulante"
+    },
+    {
+      "id": 101,
+      "name": "Mosca de néctar",
+      "procesar": "+0%",
+      "type":"insecto",
+      "get": "Galea, Goddol"
+    },
+    {
+      "id": 102,
+      "name": "Araña colorida",
+      "procesar": "+0%",
+      "type":"insecto",
+      "get": "Galea, Vendedor Ambulante"
+    },
+    {
+      "id": 103,
+      "name": "Ciempiés  taladro",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Hafnir, Vendedor Ambulante"
+    },
+    {
+      "id": 104,
+      "name": "Tricacio",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Galea, Vendedor Ambulante"
+    },
+    {
+      "id": 105,
+      "name": "Salta-lunas",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": " Goddol, Vendedor Ambulante"
+    },
+    {
+      "id": 106,
+      "name": "Cubeliyo",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "  Vendedor Ambulante"
+    },
+    {
+      "id": 107,
+      "name": "Mariposa Ángel",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Goddol, Vendedor Ambulante"
+    },
+    {
+      "id": 108,
+      "name": "Bateria",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Terbin, Vendedor Ambulante"
+    },
+    {
+      "id": 109,
+      "name": "Fouidus",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 110,
+      "name": "Slugra",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 111,
+      "name": "Niroide",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get":"Hafnir, Vendedor Ambulante"
+
+    },
+    {
+      "id": 112,
+      "name": "Vorgolia",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get":"Terbin, Vendedor Ambulante"
+    },
+    {
+      "id": 113,
+      "name": "Avispa Vanadia",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Vendedor Ambulante"
+    },
+    {
+      "id": 114,
+      "name": "Mosca frondosa",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "Bohr, Vendedor Ambulante"
+    },
+    {
+      "id": 115,
+      "name": "Hexagóculo",
+      "procesar": "+0%",
+      "type": "insecto",
+      "get": "vendedor ambulante"
+    },
+    {
+      "id": 116,
+      "name": "Flor Galeana",
+      "procesar": "+0%",
+      "type":"Hortalizas: No Cultivos",
+      "get":"Galea"
+    },
+    {
+      "id": 117,
+      "name": "Madera Galeana",
+      "procesar": "+5%",
+      "type":"Hortalizas: No Cultivos",
+      "get":"Galea,Cajas"
+    },
+    {
+      "id": 118,
+      "name": "Semilla de árbol galeano",
+      "procesar": "+3%",
+      "type":"Hortalizas: No Cultivos",
+      "get":"Galea"
+    },
+    {
+      "id": 119,
+      "name": "Savia",
+      "procesar": "+5%",
+            "type":"Hortalizas: No Cultivos",
+      "get":"Arboles (Galea y Granja)"
+    },
+    {
+      "id": 120,
+      "name": "Seta Galeana",
+      "procesar": "+0%",
+      "type":"Hortalizas: No Cultivos",
+      "get":"Galea"
+    },
+    {
+      "id": 121,
+      "name": "Helecho",
+      "procesar": "+0%",
+      "type":"Hortalizas: No Cultivos",
+      "get":"Bohr"
+    },
+    {
+      "id": 122,
+      "name": "Cactus",
+      "procesar": "+0%"
+    },
+    {
+      "id": 123,
+      "name": "Coco",
+      "procesar": "+0%"
+    },
+    {
+      "id": 124,
+      "name": "Roca del desierto",
+      "procesar": "+0%",
+      "type":"Hortalizas: No Cultivos",
+      "get":"Terbin"
+    },
+    {
+      "id": 125,
+      "name": "Madera palmera",
+      "procesar": "+7%"
+    },
+    {
+      "id": 126,
+      "name": "Semilla de palmera",
+      "procesar": "+0%"
+    },
+    {
+      "id": 127,
+      "name": "Célula de combustible",
+      "procesar": "+100%"
+    },
+    {
+      "id": 128,
+      "name": "Mueble",
+      "procesar": "+0%"
+    },
+    {
+      "id": 129,
+      "name": "Aspersor",
+      "procesar": "+0%"
+    },
+    {
+      "id": 130,
+      "name": "Valla",
+      "procesar": "+0%"
+    },
+    {
+      "id": 131,
+      "name": "Titanio",
+      "procesar": "+0%"
+    },
+    {
+      "id": 132,
+      "name": "Célula triple",
+      "procesar": "+0%"
+    },
+    {
+      "id": 133,
+      "name": "Tabla de piedra 1",
+      "procesar": "+0%",
+      "description": "En estas tablas quede registrada en idioma común, la historia de los Hafnirianos originales.",
+      "type": "artefacto",
+      "planet": "Hafnir"
+    },
+    {
+      "id": 134,
+      "name": "Tabla de piedra 2",
+      "procesar": "+0%",
+      "description": "Llamamos al mineral Kassimerita en honor a Kassimer el Dios de la prosperidad.",
+      "type": "artefacto",
+      "planet": "Hafnir"
+    },
+    {
+      "id": 135,
+      "name": "Tabla de piedra 3",
+      "procesar": "+0%",
+      "description": "El mineral tenia usos casi ilimitados, los científicos hacían avanzar la tecnología a pasos agigantados.",
+      "type": "artefacto",
+      "planet": "Hafnir"
+    },
+    {
+      "id": 136,
+      "name": "Tabla de piedra 4",
+      "procesar": "+0%",
+      "description": "Sería una construcción más grande que todas las demás pero requeriría de la fuente de Kassimerita más grande de todas.",
+      "type": "artefacto",
+      "planet": "Hafnir"
+    },
+    {
+      "id": 137,
+      "name": "Tabla de piedra 5",
+      "procesar": "+0%",
+      "description": "Hafnir no lo soportó. El estallido se llevó con él a los nuestros, los pocos que quedamos lo vivimos horrorizados desde la distancia.",
+      "type": "artefacto",
+      "planet": "Hafnir"
+    },
+    {
+      "id": 138,
+      "name": "Tinaja antigua",
+      "procesar": "+0%",
+      "description": "Un jarrón con detalles morados Receta qué guardará en su interior",
+      "type": "artefacto",
+      "planet": "Hafnir"
+    },
+    {
+      "id": 139,
+      "name": "Estatua religiosa",
+      "procesar": "+0%",
+      "description": "El ave que representa está muy hornamentada, parece algún tipo de figura de culto.",
+      "type": "artefacto",
+      "planet": "Hafnir"
+    },
+    {
+      "id": 140,
+      "name": "Máscara de piedra",
+      "procesar": "+0%",
+      "description": "Parece parte de un mural más grande.",
+      "type": "artefacto",
+      "planet": "Hafnir"
+    },
+    {
+      "id": 141,
+      "name": "Hueso desconocido",
+      "procesar": "+0%",
+      "description": "Receta De dónde habrá salido No hay criatura tan grande en Hafnir.",
+      "type": "artefacto",
+      "planet": "Hafnir"
+    },
+    {
+      "id": 142,
+      "name": "Cráneo desconocido",
+      "procesar": "+0%",
+      "description": "Parece el cráneo de algún tipo de ave, debe tener miles de años.",
+      "type": "artefacto",
+      "planet": "Hafnir"
+    },
+    {
+      "id": 143,
+      "name": "Anillo oxidado",
+      "procesar": "+0%",
+      "description": "Un viejo y oxidado anillo, me pregunto a quién habrá pertenecido.",
+      "type": "artefacto",
+      "planet": "Terbin"
+    },
+    {
+      "id": 144,
+      "name": "Cuchilla roma",
+      "procesar": "+0%",
+      "description": "No sirve para cortar, pero sus grabados son preciosos, seguro tiene alfo de valor histórico.",
+      "type": "artefacto",
+      "planet": ""
+    },
+    {
+      "id": 145,
+      "name": "Moneda antigua",
+      "procesar": "+0%",
+      "description": "Nunca habia visto un casco como este, parece tener miles de años.",
+      "type": "artefacto",
+      "planet": "Galea"
+    },
+    {
+      "id": 146,
+      "name": "Protector de la nada",
+      "procesar": "+0%",
+      "description": "",
+      "type": "artefacto",
+      "planet": ""
+    },
+    {
+      "id": 147,
+      "name": "Comunicador arcaico",
+      "procesar": "+0%",
+      "description": "Tiene botones y números y una pantalla, parece muy antiguo pero está en perfecto estado.",
+      "type": "artefacto",
+      "planet": ""
+    },
+    {
+      "id": 148,
+      "name": "Controlador del entretenimiento",
+      "procesar": "+0%",
+      "description": "Es muy agradable al tacto y tiene muchos botones, seguro que se pueden hacer maravillas con las combinaciones correctas.",
+      "type": "artefacto",
+      "planet": "Goddol"
+    },
+    {
+      "id": 149,
+      "name": "Cabeza desenterrada",
+      "procesar": "+0%",
+      "description": "El cuerpo debía ser descomunal.",
+      "type": "artefacto",
+      "planet": "Terbin"
+    },
+    {
+      "id": 150,
+      "name": "Estatua funeraria",
+      "procesar": "+0%",
+      "description": "Hay gente que las colecciona, pero son estatuas funerarias, da un poco de mal rollo si lo piensas.",
+      "type": "artefacto",
+      "planet": "Bohr"
+    },
+    {
+      "id": 151,
+      "name": "Escudo viejo",
+      "procesar": "+0%",
+      "description": "Detrás de este trozo de madera, siento que nada puede hacerme daño.",
+      "type": "artefacto",
+      "planet": "Galea"
+    },
+    {
+      "id": 152,
+      "name": "Reproductor de melodias arcaica",
+      "procesar": "+0%",
+      "description": "Hace miles de años escuchaban melodías con uno de estos, no entiendo cómo funciona.",
+      "type": "artefacto",
+      "planet": "Terbin"
+    },
+    {
+      "id": 153,
+      "name": "Mascota olvidada",
+      "procesar": "+0%",
+      "description": "Tiene un diseño muy chulo, aunque parece que lo abandonaron hace mucho.",
+      "type": "artefacto"
+    },
+    {
+      "id": 154,
+      "name": "Reto Imposible",
+      "procesar": "+0%",
+      "description": "Se rompió la piedra que rodeaba la espada antes de soltarse, parece atrapada con algún tipo de magia.",
+      "type": "artefacto",
+      "planet": "Galea"
+    },
+    {
+      "id": 155,
+      "name": "Acompañante de baño",
+      "procesar": "+0%",
+      "description": "Nunca han pasado de moda, me pregunto a quién se le habrá caído.",
+      "type": "artefacto",
+        "planet": "Bohr"
+    },
+    {
+      "id": 156,
+      "name": "Liberador de la ruina",
+      "procesar": "+0%",
+      "description": "La punta de goma es capaz de crear un pequeño vacío y extraer cosas de sitios lejamos.",
+      "type": "artefacto",
+        "planet": "Bohr"
+    },
+    {
+      "id": 157,
+      "name": "Reducor de visión metalizado",
+      "procesar": "+0%",
+      "description": "No permite mirar ni hacia arriba, ni hacia abajo, pero a cambio, protege la cabeza completamente.",
+      "type": "artefacto",
+      "planet": "Galea"
+    },
+    {
+      "id": 158,
+      "name": "Casco de la justicia",
+      "procesar": "+0%",
+      "description": "Rezuma justicia, quienquiera que lo llevase debía ser todo un personaje.",
+      "type": "artefacto"
+    },
+    {
+      "id": 159,
+      "name": "Palanca de la diversión",
+      "procesar": "+0%",
+      "description": "Receta Cuántas manos habrán pasado por esta palanca",
+      "type": "artefacto",
+      "planet": "Goddol"
+
+    },
+    {
+      "id": 160,
+      "name": "Orbe de la fantasía",
+      "procesar": "+0%",
+      "description": "Mirando a través de la bola de cristal puedo ver... nada.",
+      "type": "artefacto"
+    },
+    {
+      "id": 161,
+      "name": "Monitor pesado",
+      "procesar": "+0%",
+      "description": "Es como un dispositivo holográfico, pero enorme, pesado y muy limitado.",
+      "type": "artefacto"
+    },
+    {
+      "id": 162,
+      "name": "Instrumento par viajes temporales",
+      "procesar": "+0%",
+      "description": "Ojalá supiese alguna melodía.",
+      "type": "artefacto",
+      "planet": "Bohr"
+    },
+    {
+      "id": 163,
+      "name": "Semillas de Odox",
+      "procesar": "+0%"
+    },
+    {
+      "id": 164,
+      "name": "Odox",
+      "procesar": "+0%"
+    },
+    {
+      "id": 165,
+      "name": "Semillas de crisful",
+      "procesar": "+0%"
+    },
+    {
+      "id": 166,
+      "name": "Crisful",
+      "procesar": "+0%"
+    },
+    {
+      "id": 167,
+      "name": "Semillas de Condurl",
+      "procesar": "+0%"
+    },
+    {
+      "id": 168,
+      "name": "Condurl",
+      "procesar": "+0%"
+    },
+    {
+      "id": 169,
+      "name": "Semillas de Penrose",
+      "procesar": "+0%"
+    },
+    {
+      "id": 170,
+      "name": "Penrose",
+      "procesar": "+0%"
+    },
+    {
+      "id": 171,
+      "name": "Semillas de Solaria",
+      "procesar": "+0%"
+    },
+    {
+      "id": 172,
+      "name": "Solaria",
+      "procesar": "+0%"
+    },
+    {
+      "id": 173,
+      "name": "Semillas de Cuadrachofa",
+      "procesar": "+0%"
+    },
+    {
+      "id": 174,
+      "name": "Cuadrachofa",
+      "procesar": "+0%"
+    },
+    {
+      "id": 175,
+      "name": "Semillas vulcitania",
+      "procesar": "+0%"
+    },
+    {
+      "id": 176,
+      "name": "Brote de vulcitania",
+      "procesar": "+0%"
+    },
+    {
+      "id": 177,
+      "name": "Semillas de galleta",
+      "procesar": "+0%"
+    },
+    {
+      "id": 178,
+      "name": "Galleta",
+      "procesar": "+0%"
+    },
+    {
+      "id": 179,
+      "name": "Semillas piramidales",
+      "procesar": "+0%"
+    },
+    {
+      "id": 180,
+      "name": "Líquido piramidal",
+      "procesar": "+0%"
+    },
+    {
+      "id": 181,
+      "name": "Semillas de blóbulo",
+      "procesar": "+0%"
+    },
+    {
+      "id": 182,
+      "name": "Brote de blóbulo",
+      "procesar": "+0%"
+    },
+    {
+      "id": 183,
+      "name": "Semillas de bólaro",
+      "procesar": "+0%"
+    },
+    {
+      "id": 184,
+      "name": "Bólaro",
+      "procesar": "+0%"
+    },
+    {
+      "id": 185,
+      "name": "loosemillas",
+      "procesar": "+0%"
+    },
+    {
+      "id": 186,
+      "name": "loosandía",
+      "procesar": "+0%"
+    },
+    {
+      "id": 187,
+      "name": "Semillas Rakkaus",
+      "procesar": "+0%"
+    },
+    {
+      "id": 188,
+      "name": "Rakkau",
+      "procesar": "+0%"
+    },
+    {
+      "id": 189,
+      "name": "Semillas de Kuriq",
+      "procesar": "+0%"
+    },
+    {
+      "id": 190,
+      "name": "Kuriq",
+      "procesar": "+0%"
+    },
+    {
+      "id": 191,
+      "name": "Semillas de Molifruta",
+      "procesar": "+0%"
+    },
+    {
+      "id": 192,
+      "name": "Molifruta",
+      "procesar": "+0%"
+    },
+    {
+      "id": 193,
+      "name": "Semillas de Pelombio",
+      "procesar": "+0%"
+    },
+    {
+      "id": 194,
+      "name": "Pelombio",
+      "procesar": "+0%"
+    },
+    {
+      "id": 195,
+      "name": "Semillas de chinola",
+      "procesar": "+0%"
+    },
+    {
+      "id": 196,
+      "name": "Chinola de cristal",
+      "procesar": "+0%"
+    },
+    {
+      "id": 197,
+      "name": "Semillas de Cuouí",
+      "procesar": "+0%"
+    },
+    {
+      "id": 198,
+      "name": "Cuouí",
+      "procesar": "+0%"
+    },
+    {
+      "id": 199,
+      "name": "Semillas de globolabaza",
+      "procesar": "+0%"
+    },
+    {
+      "id": 200,
+      "name": "Globolabaza",
+      "procesar": "+0%"
+    },
+    {
+      "id": 201,
+      "name": "Lata vieja",
+      "procesar": "+0%"
+    },
+    {
+      "id": 202,
+      "name": "Bota empapada",
+      "procesar": "+1%"
+    },
+    {
+      "id": 203,
+      "name": "Anillas de plástico",
+      "procesar": "+0%"
+    },
+    {
+      "id": 204,
+      "name": "Saco de  basura",
+      "procesar": "+0%"
+    },
+    {
+      "id": 205,
+      "name": "Pneumático viejo",
+      "procesar": "+0%"
+    },
+    {
+      "id": 206,
+      "name": "Vaso de plástico",
+      "procesar": "+0%"
+    },
+    {
+      "id": 207,
+      "name": "Cactus Terbinita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 208,
+      "name": "Hierba Bohriana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 209,
+      "name": "Hierba Galeana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 210,
+      "name": "Hierba Terbinita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 211,
+      "name": "Hierba Terbinita oscura" ,
+      "procesar": "+0%"
+    },
+    {
+      "id": 212,
+      "name": "Valla Galeana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 213,
+      "name": "Suelo de tablones",
+      "procesar": "+0%"
+    },
+    {
+      "id": 214,
+      "name": "Suelo elegante de tablones",
+      "procesar": "+0%"
+    },
+    {
+      "id": 215,
+      "name": "Valla Terbinita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 216,
+      "name": "Barril",
+      "procesar": "+0%"
+    },
+    {
+      "id": 217,
+      "name": "Caja",
+      "procesar": "+0%"
+    },
+    {
+      "id": 218,
+      "name": "Barril Galeano",
+      "procesar": "+0%"
+    },
+    {
+      "id": 219,
+      "name": "Caja Galeana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 220,
+      "name": "Biombo alto azul",
+      "procesar": "+0%"
+    },
+    {
+      "id": 221,
+      "name": "Cartel madera azul",
+      "procesar": "+0%"
+    },
+    {
+      "id": 222,
+      "name": "Maceta Azul",
+      "procesar": "+0%"
+    },
+    {
+      "id": 223,
+      "name": "Taburete azul",
+      "procesar": "+0%"
+    },
+    {
+      "id": 224,
+      "name": "Tronco azules",
+      "procesar": "+0%"
+    },
+    {
+      "id": 225,
+      "name": "Casita para pájaros azul",
+      "procesar": "+0%"
+    },
+    {
+      "id": 226,
+      "name": "Piedra decorativa",
+      "procesar": "+0%"
+    },
+    {
+      "id": 227,
+      "name": "Jarrón de piedra",
+      "procesar": "+0%"
+    },
+    {
+      "id": 228,
+      "name": "Gnomo de piedra",
+      "procesar": "+0%"
+    },
+    {
+      "id": 229,
+      "name": "Estatua de piedra",
+      "procesar": "+0%"
+    },
+    {
+      "id": 230,
+      "name": "Pozo de piedra",
+      "procesar": "+0%"
+    },
+    {
+      "id": 231,
+      "name": "Pilar de piedra",
+      "procesar": "+0%"
+    },
+    {
+      "id": 232,
+      "name": "Banco de piedra",
+      "procesar": "+0%"
+    },
+    {
+      "id": 233,
+      "name": "Valla de piedra",
+      "procesar": "+0%"
+    },
+    {
+      "id": 234,
+      "name": "Suelo de gravilla",
+      "procesar": "+0%"
+    },
+    {
+      "id": 235,
+      "name": "Suelo de piedras",
+      "procesar": "+0%"
+    },
+    {
+      "id": 236,
+      "name": "Mochila pequeña",
+      "procesar": "+0%"
+    },
+    {
+      "id": 237,
+      "name": "Mochila grande",
+      "procesar": "+0%"
+    },
+    {
+      "id": 238,
+      "name": "Set de madera Azul (Exterior)",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 239,
+      "name": "Set de piedra (Exterior)",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 240,
+      "name": "Hacha de Celestio +1",
+      "procesar": "+0%"
+    },
+    {
+      "id": 241,
+      "name": "Hacha de Plata +2",
+      "procesar": "+0%"
+    },
+    {
+      "id": 242,
+      "name": "Hacha de Cronio +3",
+      "procesar": "+0%"
+    },
+    {
+      "id": 243,
+      "name": "Hacha de Mitrilo +4",
+      "procesar": "+0%"
+    },
+    {
+      "id": 244,
+      "name": "Pico de Celestio +1",
+      "procesar": "+0%"
+    },
+    {
+      "id": 245,
+      "name": "Pico de Plata +2",
+      "procesar": "+0%"
+    },
+    {
+      "id": 246,
+      "name": "Pico de Cronio +3",
+      "procesar": "+0%"
+    },
+    {
+      "id": 247,
+      "name": "Pico de Mitrilo +4",
+      "procesar": "+0%"
+    },
+    {
+      "id": 248,
+      "name": "Azada de Celestio +1",
+      "procesar": "+0%"
+    },
+    {
+      "id": 249,
+      "name": "Azada de Plata +2",
+      "procesar": "+0%"
+    },
+    {
+      "id": 250,
+      "name": "Azada de Cronio +3",
+      "procesar": "+0%"
+    },
+    {
+      "id": 251,
+      "name": "Azada de Mitrilo +4",
+      "procesar": "+0%"
+    },
+    {
+      "id": 252,
+      "name": "Hoz de Celestio +1",
+      "procesar": "+0%"
+    },
+    {
+      "id": 253,
+      "name": "Hoz de Plata +2",
+      "procesar": "+0%"
+    },
+    {
+      "id": 254,
+      "name": "Hoz de Cronio +3",
+      "procesar": "+0%"
+    },
+    {
+      "id": 255,
+      "name": "Hoz de Mitrilo +4",
+      "procesar": "+0%"
+    },
+    {
+      "id": 256,
+      "name": "Regadera de Celestio +1",
+      "procesar": "+0%"
+    },
+    {
+      "id": 257,
+      "name": "Regadera de Plata +2",
+      "procesar": "+0%"
+    },
+    {
+      "id": 258,
+      "name": "Regadera de Cronio +3",
+      "procesar": "+0%"
+    },
+    {
+      "id": 259,
+      "name": "Regadera de Mitrilo +4",
+      "procesar": "+0%"
+    },
+    {
+      "id": 260,
+      "name": "Cofre pequeño",
+      "procesar": "+0%"
+    },
+    {
+      "id": 261,
+      "name": "Aspersor Mejorado",
+      "procesar": "+0%"
+    },
+    {
+      "id": 262,
+      "name": "Aspersor de Calidad",
+      "procesar": "+0%"
+    },
+    {
+      "id": 263,
+      "name": "Teletransportador azul",
+      "procesar": "+0%"
+    },
+    {
+      "id": 264,
+      "name": "Teletransportador naranja",
+      "procesar": "+0%"
+    },
+    {
+      "id": 265,
+      "name": "Teletransportador rojo",
+      "procesar": "+0%"
+    },
+    {
+      "id": 266,
+      "name": "Teletransportador amarillo",
+      "procesar": "+0%"
+    },
+    {
+      "id": 267,
+      "name": "Teletransportador verde",
+      "procesar": "+0%"
+    },
+    {
+      "id": 268,
+      "name": "Teletransportador morado",
+      "procesar": "+0%"
+    },
+    {
+      "id": 269,
+      "name": "Hierba del desierto",
+      "procesar": "+0%"
+    },
+    {
+      "id": 270,
+      "name": "Teletransportador",
+      "procesar": "+0%"
+    },
+    {
+      "id": 271,
+      "name": "Set de madera Azul (Interior)",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 272,
+      "name": "Set de piedra (Interior)",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 273,
+      "name": "Set Champiñon (Exterior)",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 274,
+      "name": "Set Champiñon (Interior)",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 275,
+      "name": "Banco champiñón",
+      "procesar": "+0%"
+    },
+    {
+      "id": 276,
+      "name": "Caja con champiñones",
+      "procesar": "+0%"
+    },
+    {
+      "id": 277,
+      "name": "Jarrón de champiñones",
+      "procesar": "+0%"
+    },
+    {
+      "id": 278,
+      "name": "Lámpara champiñón",
+      "procesar": "+0%"
+    },
+    {
+      "id": 279,
+      "name": "Champiñón gigante",
+      "procesar": "+0%"
+    },
+    {
+      "id": 280,
+      "name": "Mini-Champiñoón",
+      "procesar": "+0%"
+    },
+    {
+      "id": 281,
+      "name": "Arbusto de champiñones",
+      "procesar": "+0%"
+    },
+    {
+      "id": 282,
+      "name": "Hierba con champiñones",
+      "procesar": "+0%"
+    },
+    {
+      "id": 283,
+      "name": "Rocas de Bohr",
+      "procesar": "+0%"
+    },
+    {
+      "id": 284,
+      "name": "Valla con champiñones",
+      "procesar": "+0%"
+    },
+    {
+      "id": 285,
+      "name": "Banco Galeano",
+      "procesar": "+0%"
+    },
+    {
+      "id": 286,
+      "name": "Estanque decorativo",
+      "procesar": "+0%"
+    },
+    {
+      "id": 287,
+      "name": "Farol Galeano",
+      "procesar": "+0%"
+    },
+    {
+      "id": 288,
+      "name": "Maceta Galeana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 289,
+      "name": "Montón de Heno",
+      "procesar": "+0%"
+    },
+    {
+      "id": 290,
+      "name": "Suelo de piedras musgosas",
+      "procesar": "+0%"
+    },
+    {
+      "id": 291,
+      "name": "Taburete galeano",
+      "procesar": "+0%"
+    },
+    {
+      "id": 292,
+      "name": "Set Galea (INTERIOR)",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 293,
+      "name": "Set Galea (EXTERIOR)",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 294,
+      "name": "Arroz",
+      "procesar": "+0%"
+    },
+    {
+      "id": 295,
+      "name": "Azúcar",
+      "procesar": "+0%"
+    },
+    {
+      "id": 296,
+      "name": "Carne Misteriosa",
+      "procesar": "+0%"
+    },
+    {
+      "id": 297,
+      "name": "Harina",
+      "procesar": "+0%"
+    },
+    {
+      "id": 298,
+      "name": "Sal",
+      "procesar": "+0%"
+    },
+    {
+      "id": 299,
+      "name": "Arroz con cosas",
+      "procesar": "+0%"
+    },
+    {
+      "id": 300,
+      "name": "Bohrheta",
+      "procesar": "+0%"
+    },
+    {
+      "id": 301,
+      "name": "Chuletón de Hexagóculo",
+      "procesar": "+0%"
+    },
+    {
+      "id": 302,
+      "name": "Estofado",
+      "procesar": "+0%"
+    },
+    {
+      "id": 303,
+      "name": "Galletas horneadas",
+      "procesar": "+0%"
+    },
+    {
+      "id": 304,
+      "name": "Hamburguedusa",
+      "procesar": "+0%"
+    },
+    {
+      "id": 305,
+      "name": "Mollicedonla",
+      "procesar": "+0%"
+    },
+    {
+      "id": 306,
+      "name": "Odox al vapor",
+      "procesar": "+0%"
+    },
+    {
+      "id": 307,
+      "name": "Pastel",
+      "procesar": "+0%"
+    },
+    {
+      "id": 308,
+      "name": "Pastel de carne",
+      "procesar": "+0%"
+    },
+    {
+      "id": 309,
+      "name": "Pescado a la plancha",
+      "procesar": "+0%"
+    },
+    {
+      "id": 310,
+      "name": "Pescado al horno",
+      "procesar": "+0%"
+    },
+    {
+      "id": 311,
+      "name": "Pescado frito",
+      "procesar": "+0%"
+    },
+    {
+      "id": 312,
+      "name": "Pizza",
+      "procesar": "+0%"
+    },
+    {
+      "id": 313,
+      "name": "Pulpunk-oyaki",
+      "procesar": "+0%"
+    },
+    {
+      "id": 314,
+      "name": "Revuelto de setas",
+      "procesar": "+0%"
+    },
+    {
+      "id": 315,
+      "name": "Sushi",
+      "procesar": "+0%"
+    },
+    {
+      "id": 316,
+      "name": "Té de granjero",
+      "procesar": "+0%"
+    },
+    {
+      "id": 317,
+      "name": "Trozo de loosandía",
+      "procesar": "+0%"
+    },
+    {
+      "id": 318,
+      "name": "Zumo de cactus Terbinita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 319,
+      "name": "Caparazón bonito",
+      "procesar": "+0%"
+    },
+    {
+      "id": 320,
+      "name": "Ostra roja",
+      "procesar": "+0%"
+    },
+    {
+      "id": 321,
+      "name": "Caparazón espiral",
+      "procesar": "+0%"
+    },
+    {
+      "id": 322,
+      "name": "Concha goddolita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 323,
+      "name": "Caparzón hermitaño",
+      "procesar": "+4%"
+    },
+    {
+      "id": 324,
+      "name": "Caracol celeste",
+      "procesar": "+8%"
+    },
+    {
+      "id": 325,
+      "name": "Estrella marina",
+      "procesar": "+0%"
+    },
+    {
+      "id": 326,
+      "name": "Caurl",
+      "procesar": "+0%"
+    },
+    {
+      "id": 327,
+      "name": "Camellia Goddolita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 328,
+      "name": "Tulipán Fantasma",
+      "procesar": "+0%"
+    },
+    {
+      "id": 329,
+      "name": "Seta camaverds",
+      "procesar": "+0%"
+    },
+    {
+      "id": 330,
+      "name": "Colmenilla omrada",
+      "procesar": "+2%"
+    },
+    {
+      "id": 331,
+      "name": "Campanilla",
+      "procesar": "+2%"
+    },
+    {
+      "id": 332,
+      "name": "Madera Goddolita",
+      "procesar": "+7%"
+    },
+    {
+      "id": 333,
+      "name": "Semilla de árbol Goddolita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 334,
+      "name": "Piedra blanca",
+      "procesar": "+0%"
+    },
+    {
+      "id": 335,
+      "name": "Huevo de Squicken",
+      "procesar": "+0%"
+    },
+    {
+      "id": 336,
+      "name": "Mesita de madera azul",
+      "procesar": "+0%"
+    },
+    {
+      "id": 337,
+      "name": "Armario pequeño azul",
+      "procesar": "+0%"
+    },
+    {
+      "id": 338,
+      "name": "Librería azul",
+      "procesar": "+0%"
+    },
+    {
+      "id": 339,
+      "name": "Silla azul",
+      "procesar": "+0%"
+    },
+    {
+      "id": 340,
+      "name": "Lámpara azul",
+      "procesar": "+0%"
+    },
+    {
+      "id": 341,
+      "name": "Armario azul",
+      "procesar": "+0%"
+    },
+    {
+      "id": 342,
+      "name": "Mesa azul",
+      "procesar": "+0%"
+    },
+    {
+      "id": 343,
+      "name": "Cama azul",
+      "procesar": "+0%"
+    },
+    {
+      "id": 344,
+      "name": "Alfombra gastada",
+      "procesar": "+0%"
+    },
+    {
+      "id": 345,
+      "name": "Banco azul",
+      "procesar": "+0%"
+    },
+    {
+      "id": 346,
+      "name": "Mesita galeana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 347,
+      "name": "Lámpara galeana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 348,
+      "name": "Silla galeana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 349,
+      "name": "Armario galeano",
+      "procesar": "+0%"
+    },
+    {
+      "id": 350,
+      "name": "Banco galeano",
+      "procesar": "+0%"
+    },
+    {
+      "id": 351,
+      "name": "Librería galeana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 352,
+      "name": "Mesa  galeana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 353,
+      "name": "Peluche gigante",
+      "procesar": "+0%"
+    },
+    {
+      "id": 354,
+      "name": "Tocador galeano",
+      "procesar": "+0%"
+    },
+    {
+      "id": 355,
+      "name": "Cama galeana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 356,
+      "name": "Mesita seta",
+      "procesar": "+0%"
+    },
+    {
+      "id": 357,
+      "name": "Cajonera seta",
+      "procesar": "+0%"
+    },
+    {
+      "id": 358,
+      "name": "Lámpara seta",
+      "procesar": "+0%"
+    },
+    {
+      "id": 359,
+      "name": "Silla seta",
+      "procesar": "+0%"
+    },
+    {
+      "id": 360,
+      "name": "Tocador seta",
+      "procesar": "+0%"
+    },
+    {
+      "id": 361,
+      "name": "Armario seta",
+      "procesar": "+0%"
+    },
+    {
+      "id": 362,
+      "name": "Librería seta",
+      "procesar": "+0%"
+    },
+    {
+      "id": 363,
+      "name": "Mesa seta",
+      "procesar": "+0%"
+    },
+    {
+      "id": 364,
+      "name": "Sillón seta",
+      "procesar": "+0%"
+    },
+    {
+      "id": 365,
+      "name": "Camma seta",
+      "procesar": "+0%"
+    },
+    {
+      "id": 366,
+      "name": "Taburete Kassi",
+      "procesar": "+0%"
+    },
+    {
+      "id": 367,
+      "name": "Cajonera pequeña Kassi",
+      "procesar": "+0%"
+    },
+    {
+      "id": 368,
+      "name": "Mesita Kassi",
+      "procesar": "+0%"
+    },
+    {
+      "id": 369,
+      "name": "Estatua Kassi",
+      "procesar": "+0%"
+    },
+    {
+      "id": 370,
+      "name": "Armario Kassi",
+      "procesar": "+0%"
+    },
+    {
+      "id": 371,
+      "name": "Banco Kassi",
+      "procesar": "+0%"
+    },
+    {
+      "id": 372,
+      "name": "Mesa Kassi",
+      "procesar": "+0%"
+    },
+
+    {
+      "id": 373,
+      "name": "Cajonera Kassi",
+      "procesar": "+0%"
+    },
+    {
+      "id": 374,
+      "name": "Algfombra Kassi",
+      "procesar": "+0%"
+    },
+    {
+      "id": 375,
+      "name": "Cama Kassi",
+      "procesar": "+0%"
+    },
+    {
+      "id": 376,
+      "name": "Caja de cartón",
+      "procesar": "+0%"
+    },
+    {
+      "id": 377,
+      "name": "Pila de cajas cartón",
+      "procesar": "+0%"
+    },
+    {
+      "id": 378,
+      "name": "Caña de plata",
+      "procesar": "+0%"
+    },
+    {
+      "id": 379,
+      "name": "Caña de Mitrilo",
+      "procesar": "+0%"
+    },
+    {
+      "id": 380,
+      "name": "Red de plata",
+      "procesar": "+0%"
+    },
+    {
+      "id": 381,
+      "name": "Red de Mitrilo",
+      "procesar": "+0%"
+    },
+    {
+      "id": 382,
+      "name": "Mesa de piedra",
+      "procesar": "+0%"
+    },
+    {
+      "id": 383,
+      "name": "Lámpara de piedra",
+      "procesar": "+0%"
+    },
+    {
+      "id": 384,
+      "name": "Alfombra azul",
+      "procesar": "+0%"
+    },
+    {
+      "id": 385,
+      "name": "Cama de piedra",
+      "procesar": "+0%"
+    },
+    {
+      "id": 386,
+      "name": "Soñña de piedra",
+      "procesar": "+0%"
+    },
+    {
+      "id": 387,
+      "name": "Mesita de piedra",
+      "procesar": "+0%"
+    },
+    {
+      "id": 388,
+      "name": "Estantería de piedra",
+      "procesar": "+0%"
+    },
+    {
+      "id": 389,
+      "name": "Sofá de piedra",
+      "procesar": "+0%"
+    },
+    {
+      "id": 390,
+      "name": "Sukkib de piedra",
+      "procesar": "+0%"
+    },
+    {
+      "id": 391,
+      "name": "Televisión plana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 392,
+      "name": "Set Goddol (EXTERIOR)",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 393,
+      "name": "Tronco de regalos",
+      "procesar": "+10%"
+    },
+    {
+      "id": 394,
+      "name": "Árbol festivo",
+      "procesar": "+0%"
+    },
+    {
+      "id": 395,
+      "name": "Montón de regalos",
+      "procesar": "+0%"
+    },
+    {
+      "id": 396,
+      "name": "Regalo alargdo",
+      "procesar": "+0%"
+    },
+    {
+      "id": 397,
+      "name": "Regalo pequeño",
+      "procesar": "+0%"
+    },
+    {
+      "id": 398,
+      "name": "Set Goddol (INTERIOR)",
+      "procesar": "+0%"
+    },
+    {
+      "id": 399,
+      "name": "Cama colorida",
+      "procesar": "+0%"
+    },
+    {
+      "id": 400,
+      "name": "Mesa Goddolita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 401,
+      "name": "Alfombra colorida",
+      "procesar": "+0%"
+    },
+    {
+      "id": 402,
+      "name": "Sofá colorido",
+      "procesar": "+0%"
+    },
+    {
+      "id": 403,
+      "name": "Estantería Goddolita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 404,
+      "name": "Lámpara colorida",
+      "procesar": "+0%"
+    },
+    {
+      "id": 405,
+      "name": "Mesita Goddolita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 406,
+      "name": "Mesa de café colorida",
+      "procesar": "+0%"
+    },
+    {
+      "id": 407,
+      "name": "Armario Goddolita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 408,
+      "name": "Silla colorida",
+      "procesar": "+0%"
+    },
+    {
+      "id": 409,
+      "name": "Sombrilla colorida",
+      "procesar": "+0%"
+    },
+        {
+      "id": 410,
+      "name": "Tumbona colorida",
+      "procesar": "+0%"
+    },
+    {
+      "id": 411,
+      "name": "Lámpara Goddolita",
+      "procesar": "+0%"
+    },
+    
+    {
+      "id": 412,
+      "name": "Barquito de juguete",
+      "procesar": "+0%"
+    },
+    {
+      "id": 413,
+      "name": "Raíz decorativa",
+      "procesar": "+0%"
+    },
+    {
+      "id": 414,
+      "name": "Hamaca colorida",
+      "procesar": "+0%"
+    },
+    {
+      "id": 415,
+      "name": "Set de Picnic",
+      "procesar": "+0%"
+    },
+    {
+      "id": 416,
+      "name": "Estatua extraña",
+      "procesar": "+0%"
+    },
+    {
+      "id": 417,
+      "name": "Valla Goddolita",
+      "procesar": "+0%"
+    },
+    {
+      "id": 418,
+      "name": "Suelo colorido",
+      "procesar": "+0%"
+    },
+    {
+      "id": 419,
+      "name": "Chimenea",
+      "procesar": "+0%"
+    },
+    {
+      "id": 420,
+      "name": "CHIP Aspersor mejorado",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 421,
+      "name": "CHIP Aspersor de calidad",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 422,
+      "name": "CHIP Aspersor básico",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 423,
+      "name": "CHIP Cofre pequeño",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 424,
+      "name": "CHIP Célula de combustible",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 425,
+      "name": "CHIP Célula triple",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 426,
+      "name": "CHIP Cofre gramde",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 427,
+      "name": "Cofre grande",
+      "procesar": "+0%"
+    },
+    {
+      "id": 428,
+      "name": "Set Hafnir (INTERIOR)",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 429,
+      "name": "Set Hafnir (EXTERIOR)",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+
+    {
+      "id": 430,
+      "name": "Pieza de recambio",
+      "procesar": "+10%"
+    },
+    {
+      "id": 431,
+      "name": "Banco Hafnir",
+      "procesar": "+0%"
+    },
+    {
+      "id": 432,
+      "name": "Farol Hafnir",
+      "procesar": "+0%"
+    },
+    {
+      "id": 433,
+      "name": "Pilar de madera",
+      "procesar": "+0%"
+    },
+    {
+      "id": 434,
+      "name": "Grabados antiguos",
+      "procesar": "+0%"
+    },
+    {
+      "id": 435,
+      "name": "Vagoneta",
+      "procesar": "+0%"
+    },
+    {
+      "id": 436,
+      "name": "Valla Hafnir",
+      "procesar": "+0%"
+    },
+    {
+      "id": 437,
+      "name": "Vías",
+      "procesar": "+0%"
+    },
+    {
+      "id": 438,
+      "name": "Gravilla",
+      "procesar": "+0%"
+    },
+    {
+      "id": 439,
+      "name": "Gravilla rosada",
+      "procesar": "+0%"
+    },
+    {
+      "id": 440,
+      "name": "Gravilla verdosa",
+      "procesar": "+0%"
+    },
+    {
+      "id": 441,
+      "name": "PROTECTOR DE LOS INFIERNOS",
+      "procesar": "+0%"
+    },
+    {
+      "id": 442,
+      "name": "Juguetes para Animales",
+      "procesar": "+0%"
+    },
+    {
+      "id": 443,
+      "name": "Piedra de Eddy",
+      "procesar": "+0%"
+    },
+    {
+      "id": 444,
+      "name": "Globos del Sha'an Riod",
+      "procesar": "+0%"
+    },
+    {
+      "id": 445,
+      "name": "Talloot",
+      "procesar": "+0%"
+    },
+    {
+      "id": 446,
+      "name": "Ellot",
+      "procesar": "+0%"
+    },
+    {
+      "id": 447,
+      "name": "Ballot",
+      "procesar": "+0%"
+    },
+    {
+      "id": 448,
+      "name": "Squaroot",
+      "procesar": "+0%"
+    },
+    {
+      "id": 449,
+      "name": "Eyoot",
+      "procesar": "+0%"
+    },
+    {
+      "id": 450,
+      "name": "Longoot",
+      "procesar": "+0%"
+    },
+    {
+      "id": 451,
+      "name": "Robot",
+      "procesar": "+2%"
+    },
+    {
+      "id": 452,
+      "name": "Astronoot",
+      "procesar": "+0%"
+    },
+    {
+      "id": 453,
+      "name": "Empyroot",
+      "procesar": "+0%"
+    },
+    {
+      "id": 454,
+      "name": "Dropoot",
+      "procesar": "+0%"
+    },
+    {
+      "id": 455,
+      "name": "Frogoot",
+      "procesar": "+0%"
+    },
+    {
+      "id": 456,
+      "name": "Teethoot",
+      "procesar": "+0%"
+    },
+    {
+      "id": 457,
+      "name": "Noroot",
+      "procesar": "+2%"
+    },
+    {
+      "id": 458,
+      "name": "Widoot",
+      "procesar": "+0%"
+    },
+    {
+      "id": 459,
+      "name": "Plankoot",
+      "procesar": "+0%"
+    },
+    {
+      "id": 460,
+      "name": "Sadoot",
+      "procesar": "+0%"
+    },
+
+    {
+      "id": 461,
+      "name": "Set Vana (INTERIOR)",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 462,
+      "name": "Set Vana (EXTERIOR)",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 463,
+      "name": "Peluche gusano",
+      "procesar": "+0%"
+    },
+    {
+      "id": 464,
+      "name": "Pilar vana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 465,
+      "name": "Tesoro",
+      "procesar": "+0%"
+    },
+    {
+      "id": 466,
+      "name": "Pira vVana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 467,
+      "name": "Sillón Vana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 468,
+      "name": "Diván Vana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 469,
+      "name": "Palmera Vana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 470,
+      "name": "Valla Vana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 471,
+      "name": "Suelo Vana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 472,
+      "name": "Tela Vana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 473,
+      "name": "Silla Vana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 474,
+      "name": "Mesita Vana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 475,
+      "name": "Sarcófago",
+      "procesar": "+0%"
+    },
+    {
+      "id": 476,
+      "name": "Lámpara Vana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 477,
+      "name": "Cama Vana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 478,
+      "name": "Alfombra Vana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 479,
+      "name": "Sofá Vana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 480,
+      "name": "Estantería Vana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 481,
+      "name": "Mesa Vana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 482,
+      "name": "Biombo Vana",
+      "procesar": "+0%"
+    },
+    {
+      "id": 483,
+      "name": "Receta Arroz con cosas",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 484,
+      "name": "Receta Chuletón de Hexagóculo",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 485,
+      "name": "Receta Estofado",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 486,
+      "name": "Receta Galletas horneadas",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 487,
+      "name": "Receta Hamburguedusa",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 488,
+      "name": "Receta Mollicedonia",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 489,
+      "name": "Receta Odox al vapor",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 490,
+      "name": "Receta Pastel",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 491,
+      "name": "Receta Pastel de carne",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 492,
+      "name": "Receta Pescado a la plancha",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 493,
+      "name": "Receta Pescado al horno",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 494,
+      "name": "Receta Pescado frito",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 495,
+      "name": "Receta Pizza",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 496,
+      "name": "Receta Pulpunk-oyaki",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 497,
+      "name": "Receta Revuelto de setas",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 498,
+      "name": "Receta sushi",
+      "procesar": "-1%", 
+      "type": "chip"
+    },
+    {
+      "id": 499,
+      "name": "Palomitas pequeñas",
+      "procesar": "+0%"
+    },
+    {
+      "id": 500,
+      "name": "Palomitas medianas",
+      "procesar": "+0%"
+    },
+    {
+      "id": 501,
+      "name": "Palomitas grande",
+      "procesar": "+0%"
+    },
+    {
+      "id": 502,
+      "name": "Refresco",
+      "procesar": "+0%"
+    },
+    {
+      "id": 503,
+      "name": "Helado",
+      "procesar": "+0%"
+    }
+  ]
+}

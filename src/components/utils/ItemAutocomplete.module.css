@@ -1,0 +1,187 @@
+.dropdown {
+  background: var(--bg-card);
+  border: 2px solid var(--border-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: visible;
+  /* Allowing tooltips to pop out without clipping */
+  font-family: 'LanaPixel', Arial, sans-serif;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e272e;
+  padding: 8px 12px;
+  border-bottom: 2px solid #3a4550;
+  border-radius: 6px 6px 0 0;
+}
+
+.searchInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-family: inherit;
+  outline: none;
+  font-size: 14px;
+}
+
+.searchInput::placeholder {
+  color: #888;
+}
+
+.toggleBtn {
+  background: #2a343d;
+  border: 1px solid #3a4550;
+  border-radius: 4px;
+  color: #aaa;
+  cursor: pointer;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  margin-left: 10px;
+}
+
+.toggleBtn:hover {
+  color: #fff;
+  background: #3a4550;
+}
+
+/* ---------------- GRID VIEW ---------------- */
+.itemsGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /* 7 columnas caben bien a 32x32 en 320px ancho */
+  gap: 4px;
+  padding: 8px;
+  max-height: 250px;
+  overflow-y: auto;
+  background: #2a343d;
+  border-radius: 0 0 6px 6px;
+}
+
+.itemGridSlot {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 1;
+  padding: 2px;
+  background: #1e272e;
+  border: 1px solid #3a4550;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.itemGridSlot:hover {
+  background: #3a4550;
+  border-color: #5ab15a;
+  transform: scale(1.15);
+  z-index: 10;
+}
+
+.itemImageGrid {
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.itemGridSlot:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.95);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  white-space: pre-line;
+  z-index: 10000;
+  pointer-events: none;
+  border: 1px solid #5ab15a;
+  min-width: max-content;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Primera fila del grid (hasta 7 columnas): Tooltip hacia abajo */
+.itemGridSlot:nth-child(-n+7):hover::after {
+  bottom: auto;
+  top: 110%;
+}
+
+/* ---------------- LIST VIEW ---------------- */
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  max-height: 250px;
+  overflow-y: auto;
+  background: #2a343d;
+  border-radius: 0 0 6px 6px;
+}
+
+.itemListRow {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  gap: 12px;
+  border-bottom: 1px solid #3a4550;
+}
+
+.itemListRow:last-child {
+  border-bottom: none;
+}
+
+.itemListRow:hover {
+  background: #3a4550;
+}
+
+.itemImageList {
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  flex-shrink: 0;
+}
+
+.itemInfoList {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.itemIdList {
+  font-size: 0.85em;
+  color: #aaa;
+}
+
+.itemNameList {
+  font-weight: bold;
+  color: var(--text-primary);
+  font-size: 13px;
+}
+
+.moreIndicator {
+  padding: 8px;
+  color: #aaa;
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+  background: #1e272e;
+  border-top: 2px solid #3a4550;
+}

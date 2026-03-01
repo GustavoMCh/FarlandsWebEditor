@@ -1,0 +1,44 @@
+:root {
+  --bg-item: #1e272e;
+  --border-light: #457b9d;
+  --text-muted: #fafafa;
+  --text-primary: #a8dadc;
+  --text-warning: #f1faee;
+  --accent-warning: #fdcb6e;
+  --accent-danger: #e63946;
+  --accent-info: #00cec9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('/static/Space.png');
+  background-repeat: repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  margin: 0;
+  padding: 20px;
+}
+
+#fileSelectorBackground {
+  margin-top: 5em;
+  top: 15em;
+  left: 5em;
+  max-height: 70px;
+}
+
+
+/* ItemContextMenu.module.css */
+.contextMenu {
+  position: fixed;
+  z-index: 1000;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 12px;
+  min-width: 200px;
+  display: none; /* se controla desde JS */
+}
