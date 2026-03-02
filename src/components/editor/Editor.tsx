@@ -8,7 +8,7 @@ import ToolsStats from '@/components/tools/ToolsStats';
 import ShipSection from '@/components/ship/ShipSection';
 import FarmSection from '@/components/farm/FarmSection';
 import ChestSection from '@/components/inventory/ChestSection';
-import ArcaProgress from '@/components/arca/ArcaProgress';
+import ArcaTab from '@/components/explorer/ArcaTab';
 import ItemExplorerTab from '@/components/explorer/ItemExplorerTab';
 import ExportButton from '@/components/buttons/ExportButton';
 import ClearAllButton from '@/components/buttons/ClearAllButton';
@@ -18,11 +18,12 @@ import ToolGuideModal from '@/components/modals/ToolGuideModal';
 import { useState, useEffect } from 'react';
 import JsonEditor from '@/components/utils/JsonEditor';
 import AchievementsTab from '@/components/explorer/AchievementsTab';
+import { InventoryGrid } from '../inventory/InventoryGrid';
 
 export default function Editor() {
-  const { savedData, setSavedData, currentSlotIndex, currentSlot, clearSaveData } = useSaveData();
+  const { savedData, setSavedData, currentSlotIndex, currentSlot } = useSaveData();
   const [showToolGuide, setShowToolGuide] = useState<string | null>(null);
-  const [activeTab, setActiveTab] = useState<string>('Todo');
+  const [activeTab, setActiveTab] = useState<string>('farm');
   const [showTranslations, setShowTranslations] = useState<boolean>(false);
 
   useEffect(() => {
@@ -123,11 +124,8 @@ export default function Editor() {
         "Red": "redLevel"
       };
 
-      // Check all 7 locked tool slots in Player Inventory
       for (let i = 0; i <= 6; i++) {
         const itemID = cloneInventories.player[i]?.itemID || 0;
-
-        // If a known tool is placed here, update its corresponding save data level
         if (itemID > 0) {
           for (const [toolName, ids] of Object.entries(toolLevels)) {
             const levelIndex = ids.indexOf(itemID);
@@ -152,19 +150,17 @@ export default function Editor() {
 
     window.addEventListener('inventory-swap', handleInventorySwap);
     return () => window.removeEventListener('inventory-swap', handleInventorySwap);
-  }, [savedData, currentSlotIndex]);
+  }, [savedData, currentSlotIndex, setSavedData]);
 
   const tabs = [
-    { id: 'Jugador', label: 'Jugador' },
-    { id: 'Nave', label: 'Nave' },
-    { id: 'Herramienta', label: 'Herramientas' },
-    { id: 'Granja', label: 'Granja' },
-    { id: 'Cofres', label: 'Cofres' },
-    { id: 'Progreso Arca', label: 'Progreso Arca' },
-    { id: 'Catálogo', label: 'Ítems' },
-    { id: 'Logros', label: '🏆 Logros' },
-    { id: 'Avanzado', label: '⚙️ Avanzado' },
-    { id: 'Todo', label: 'Ver Todo' }
+    { id: 'farm', label: '🌾 Granja' },
+    { id: 'player', label: '👤 Jugador' },
+    { id: 'inventory', label: '🎒 Inv' },
+    { id: 'tools', label: '🛠️ Herramientas' },
+    { id: 'ship', label: '🚀 Nave' },
+    { id: 'arca', label: '🏺 Arca' },
+    { id: 'achievements', label: '🏆 Logros' },
+    { id: 'advanced', label: '⚙️ Avanzado' }
   ];
 
   const handleRawDataChange = (newData: any) => {
@@ -180,39 +176,16 @@ export default function Editor() {
     });
   };
 
-  return (
-    <div className="container-fluid py-4 px-2 md:px-4">
-
-      <DayYearDisplay />
-
-      {/* Navegación por Pestañas — scroll horizontal en una sola línea */}
-      <div style={{ overflowX: 'auto', overflowY: 'hidden', marginBottom: '1rem', scrollbarWidth: 'none' }}>
-        <ul className="nav nav-tabs flex-nowrap" style={{ minWidth: 'max-content', borderBottom: '1px solid #dee2e6' }}>
-          {tabs.map((tab) => (
-            <li className="nav-item" key={tab.id}>
-              <button
-                className={`nav-link ${activeTab === tab.id ? 'active fw-bold' : ''}`}
-                onClick={() => setActiveTab(tab.id)}
-                style={{ cursor: 'pointer', whiteSpace: 'nowrap' }}
-              >
-                {tab.label}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      {/* Contenido Condicional */}
-      {(activeTab === 'Todo' || activeTab === 'Jugador') && <PlayerSection />}
-      {(activeTab === 'Todo' || activeTab === 'Nave') && <ShipSection />}
-      {(activeTab === 'Todo' || activeTab === 'Herramienta') && <ToolsStats onOpenToolGuide={setShowToolGuide} />}
-      {(activeTab === 'Todo' || activeTab === 'Granja') && <FarmSection />}
-      {(activeTab === 'Todo' || activeTab === 'Cofres') && <ChestSection />}
-      {(activeTab === 'Todo' || activeTab === 'Progreso Arca') && <ArcaProgress />}
-      {(activeTab === 'Todo' || activeTab === 'Catálogo') && <ItemExplorerTab />}
-      {(activeTab === 'Todo' || activeTab === 'Logros') && <AchievementsTab />}
-
-      {(activeTab === 'Todo' || activeTab === 'Avanzado') && currentSlot && (
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case 'farm': return <FarmSection />;
+      case 'player': return <PlayerSection />;
+      case 'inventory': return <InventoryGrid />;
+      case 'tools': return <ToolsStats onOpenToolGuide={setShowToolGuide} />;
+      case 'ship': return <ShipSection />;
+      case 'arca': return <ArcaTab />;
+      case 'achievements': return <AchievementsTab />;
+      case 'advanced': return currentSlot && (
         <div className="card bg-dark border-danger my-3">
           <div className="card-header bg-danger text-white d-flex justify-content-between align-items-center flex-wrap">
             <div>
@@ -237,7 +210,32 @@ export default function Editor() {
             <JsonEditor data={currentSlot} onChange={handleRawDataChange} name="currentSlot" showTranslations={showTranslations} />
           </div>
         </div>
-      )}
+      );
+      default: return null;
+    }
+  };
+
+  return (
+    <div className="container-fluid py-4 px-2 md:px-4">
+      <DayYearDisplay />
+
+      <div style={{ overflowX: 'auto', overflowY: 'hidden', marginBottom: '1rem', scrollbarWidth: 'none' }}>
+        <ul className="nav nav-tabs flex-nowrap" style={{ minWidth: 'max-content', borderBottom: '1px solid #dee2e6' }}>
+          {tabs.map((tab) => (
+            <li className="nav-item" key={tab.id}>
+              <button
+                className={`nav-link ${activeTab === tab.id ? 'active fw-bold' : ''}`}
+                onClick={() => setActiveTab(tab.id)}
+                style={{ cursor: 'pointer', whiteSpace: 'nowrap' }}
+              >
+                {tab.label}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {renderTabContent()}
 
       <div className="text-center mt-3">
         <ClearAllButton />
@@ -249,7 +247,6 @@ export default function Editor() {
       <ExportButton />
       <BackButton />
 
-      {/* Modales */}
       <ManualIdModal />
       {showToolGuide && (
         <ToolGuideModal
