@@ -17,6 +17,7 @@ import ManualIdModal from '@/components/modals/ManualIdModal';
 import ToolGuideModal from '@/components/modals/ToolGuideModal';
 import { useState, useEffect } from 'react';
 import JsonEditor from '@/components/utils/JsonEditor';
+import AchievementsTab from '@/components/explorer/AchievementsTab';
 
 export default function Editor() {
   const { savedData, setSavedData, currentSlotIndex, currentSlot, clearSaveData } = useSaveData();
@@ -161,7 +162,8 @@ export default function Editor() {
     { id: 'Cofres', label: 'Cofres' },
     { id: 'Progreso Arca', label: 'Progreso Arca' },
     { id: 'Catálogo', label: 'Ítems' },
-    { id: 'Avanzado', label: 'Avanzado (Raw)' },
+    { id: 'Logros', label: '🏆 Logros' },
+    { id: 'Avanzado', label: '⚙️ Avanzado' },
     { id: 'Todo', label: 'Ver Todo' }
   ];
 
@@ -183,20 +185,22 @@ export default function Editor() {
 
       <DayYearDisplay />
 
-      {/* Navegación por Pestañas */}
-      <ul className="nav nav-tabs mb-4 justify-content-center flex-wrap gap-1">
-        {tabs.map((tab) => (
-          <li className="nav-item" key={tab.id}>
-            <button
-              className={`nav-link ${activeTab === tab.id ? 'active fw-bold' : ''}`}
-              onClick={() => setActiveTab(tab.id)}
-              style={{ cursor: 'pointer' }}
-            >
-              {tab.label}
-            </button>
-          </li>
-        ))}
-      </ul>
+      {/* Navegación por Pestañas — scroll horizontal en una sola línea */}
+      <div style={{ overflowX: 'auto', overflowY: 'hidden', marginBottom: '1rem', scrollbarWidth: 'none' }}>
+        <ul className="nav nav-tabs flex-nowrap" style={{ minWidth: 'max-content', borderBottom: '1px solid #dee2e6' }}>
+          {tabs.map((tab) => (
+            <li className="nav-item" key={tab.id}>
+              <button
+                className={`nav-link ${activeTab === tab.id ? 'active fw-bold' : ''}`}
+                onClick={() => setActiveTab(tab.id)}
+                style={{ cursor: 'pointer', whiteSpace: 'nowrap' }}
+              >
+                {tab.label}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       {/* Contenido Condicional */}
       {(activeTab === 'Todo' || activeTab === 'Jugador') && <PlayerSection />}
@@ -206,6 +210,7 @@ export default function Editor() {
       {(activeTab === 'Todo' || activeTab === 'Cofres') && <ChestSection />}
       {(activeTab === 'Todo' || activeTab === 'Progreso Arca') && <ArcaProgress />}
       {(activeTab === 'Todo' || activeTab === 'Catálogo') && <ItemExplorerTab />}
+      {(activeTab === 'Todo' || activeTab === 'Logros') && <AchievementsTab />}
 
       {(activeTab === 'Todo' || activeTab === 'Avanzado') && currentSlot && (
         <div className="card bg-dark border-danger my-3">
