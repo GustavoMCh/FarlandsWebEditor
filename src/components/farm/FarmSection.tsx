@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useSaveData } from '../utils/useSaveData';
 import WateredCrops from './WateredCrops';
+import ChestSection from '../inventory/ChestSection';
 import { SlotData } from '@/types/types';
 
 const FARM_LEVELS = [1, 2, 3, 4];
@@ -128,6 +129,9 @@ export default function FarmSection() {
         <div className="mt-3">
           <WateredCrops />
         </div>
+
+        {/* Chests */}
+        <ChestSection />
 
       </div>
     </div>

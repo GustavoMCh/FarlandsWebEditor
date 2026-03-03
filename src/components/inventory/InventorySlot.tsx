@@ -115,7 +115,7 @@ export default function InventorySlot({
     <div
       ref={slotRef}
       className={`item-slot cursor-pointer border p-1 rounded position-relative transition-all duration-200 ${showMenu ? 'border-success shadow-[0_0_10px_rgba(40,167,69,0.9)] z-10 scale-105' : 'border-gray-700 bg-gray-900'}`}
-      style={{ width: '75px', height: '50px', opacity: isEmpty && !isLocked ? 0.5 : 1 }}
+      style={{ width: '100%', aspectRatio: '1/0.66', opacity: isEmpty && !isLocked ? 0.5 : 1 }}
       data-id={itemID}
       data-quantity={amount}
       data-inventory={inventoryType}

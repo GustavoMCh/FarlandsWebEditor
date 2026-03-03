@@ -179,8 +179,11 @@ export const ItemAutocomplete = ({ onSelect, onClose, targetRef, originalItemId 
                     key={item.id}
                     className={styles.itemGridSlot}
                     onClick={() => handleSelect(item.id)}
-                    data-tooltip={`${item.name}\nID: #${item.id}${total > 0 ? `\nTienes: ${total}\n(${breakdown})` : ''}`}
+                    data-tooltip={`${item.name}${item.procesar ? ` (${item.procesar})` : ''}\nID: #${item.id}${total > 0 ? `\nTienes: ${total}\n(${breakdown})` : ''}`}
                   >
+                    {item.procesar && (
+                      <span className={styles.procBadgeGrid}>{item.procesar}</span>
+                    )}
                     <img
                       src={`/static/items/Item_${item.id}.png`}
                       alt=""
@@ -209,14 +212,17 @@ export const ItemAutocomplete = ({ onSelect, onClose, targetRef, originalItemId 
                       onError={(e) => (e.currentTarget.src = '/static/items/unknown.png')}
                     />
                     <div className={styles.itemInfoList}>
-                      <span className={styles.itemIdList}>
-                        #{item.id}
+                      <div className="d-flex align-items-center gap-2">
+                        <span className={styles.itemIdList}>#{item.id}</span>
+                        {item.procesar && (
+                          <span className={styles.procBadgeList}>{item.procesar}</span>
+                        )}
                         {total > 0 && (
-                          <span className="badge bg-secondary ms-2" title={breakdown}>
-                            Tienes {total} ({breakdown})
+                          <span className="badge bg-secondary" style={{ fontSize: '9px' }} title={breakdown}>
+                            Tienes {total}
                           </span>
                         )}
-                      </span>
+                      </div>
                       <span className={styles.itemNameList}>{item.name}</span>
                     </div>
                   </div>

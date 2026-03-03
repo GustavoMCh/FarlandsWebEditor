@@ -18,6 +18,7 @@ import ToolGuideModal from '@/components/modals/ToolGuideModal';
 import { useState, useEffect } from 'react';
 import JsonEditor from '@/components/utils/JsonEditor';
 import AchievementsTab from '@/components/explorer/AchievementsTab';
+import GuidesTab from '@/components/explorer/GuidesTab';
 import { InventoryGrid } from '../inventory/InventoryGrid';
 
 export default function Editor() {
@@ -155,11 +156,11 @@ export default function Editor() {
   const tabs = [
     { id: 'farm', label: '🌾 Granja' },
     { id: 'player', label: '👤 Jugador' },
-    { id: 'inventory', label: '🎒 Inv' },
-    { id: 'tools', label: '🛠️ Herramientas' },
     { id: 'ship', label: '🚀 Nave' },
+    { id: 'tools', label: '🛠️ Herramientas' },
     { id: 'arca', label: '🏺 Arca' },
     { id: 'achievements', label: '🏆 Logros' },
+    { id: 'guides', label: '📖 Guías' },
     { id: 'advanced', label: '⚙️ Avanzado' }
   ];
 
@@ -180,11 +181,17 @@ export default function Editor() {
     switch (activeTab) {
       case 'farm': return <FarmSection />;
       case 'player': return <PlayerSection />;
-      case 'inventory': return <InventoryGrid />;
+      case 'inventory': return (
+        <InventoryGrid
+          items={savedData?.gameData.slotData[currentSlotIndex]?.inventorySaveItems || []}
+          inventoryType="player"
+        />
+      );
       case 'tools': return <ToolsStats onOpenToolGuide={setShowToolGuide} />;
       case 'ship': return <ShipSection />;
       case 'arca': return <ArcaTab />;
       case 'achievements': return <AchievementsTab />;
+      case 'guides': return <GuidesTab />;
       case 'advanced': return currentSlot && (
         <div className="card bg-dark border-danger my-3">
           <div className="card-header bg-danger text-white d-flex justify-content-between align-items-center flex-wrap">
@@ -219,8 +226,8 @@ export default function Editor() {
     <div className="container-fluid py-4 px-2 md:px-4">
       <DayYearDisplay />
 
-      <div style={{ overflowX: 'auto', overflowY: 'hidden', marginBottom: '1rem', scrollbarWidth: 'none' }}>
-        <ul className="nav nav-tabs flex-nowrap" style={{ minWidth: 'max-content', borderBottom: '1px solid #dee2e6' }}>
+      <div className="custom-tabs-scroll">
+        <ul className="nav nav-tabs flex-nowrap" style={{ borderBottom: '1px solid #dee2e6' }}>
           {tabs.map((tab) => (
             <li className="nav-item" key={tab.id}>
               <button
