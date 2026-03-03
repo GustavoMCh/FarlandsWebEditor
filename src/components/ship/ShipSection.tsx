@@ -279,7 +279,7 @@ export default function ShipSection() {
             })}
           </div>
           <small className="text-muted mt-2 d-block">
-            Cambia la "bola" u ornamento que cuelga en la cabina de la nave.
+            Cambia la &quot;bola&quot; u ornamento que cuelga en la cabina de la nave.
           </small>
         </div>
 
