@@ -6,9 +6,19 @@ import { copyToClipboard } from '@/lib/utils';
 import { useSpriteSheet } from '@/lib/useSpriteSheet'; // ← Hook nuevo
 import { GameSaveData } from '@/types/types';
 import GameSelector from '../game/GameSelector';
+import UserMenu from '../layout/UserMenu';
+import ShareSaveModal from '../modals/ShareSaveModal';
+import { useState } from 'react';
+import { db } from '@/lib/firebase';
+import { doc, updateDoc } from 'firebase/firestore';
+import { useAuth } from '@/hooks/useAuth';
 
 export default function FileSelector() {
-  const { savedData, setSavedData, setLoadedFromFile, setCurrentSlotIndex, clearSaveData } = useSaveData();
+  const { savedData, currentSlotIndex, setSavedData, setLoadedFromFile, setCurrentSlotIndex, clearSaveData } = useSaveData();
+  const { user, profile } = useAuth();
+  const [showShareModal, setShowShareModal] = useState(false);
+  const [publicMessage, setPublicMessage] = useState('');
+  const [isSavingMessage, setIsSavingMessage] = useState(false);
   const fileSelectorRef = useRef<HTMLDivElement>(null);
 
 
@@ -170,6 +180,32 @@ export default function FileSelector() {
     reader.readAsText(file);
   };
 
+  // Sincronizar mensaje del perfil
+  useEffect(() => {
+    if (profile?.publicMessage !== undefined) {
+      setPublicMessage(profile.publicMessage);
+    }
+  }, [profile]);
+
+  const handleMessageChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.value;
+    setPublicMessage(val);
+  };
+
+  const saveMessage = async () => {
+    if (!user) return;
+    setIsSavingMessage(true);
+    try {
+      await updateDoc(doc(db, 'users', user.uid), {
+        publicMessage: publicMessage
+      });
+    } catch (err) {
+      console.error('Error saving message:', err);
+    } finally {
+      setIsSavingMessage(false);
+    }
+  };
+
 
   return (
     <div
@@ -179,129 +215,192 @@ export default function FileSelector() {
     >
 
 
-      {/* CANVAS: Recorte del banner superior */}
-      <img src='/static/FarlandsLogo.png'></img>
+      {/* Logo */}
+      <img src="/static/FarlandsLogo.png" alt="Farlands Logo" className="position-relative mb-4" style={{ zIndex: 1 }} />
 
 
-      {/* Si NO hay savedData → mostramos el selector de archivo */}
+
       {!savedData ? (
         <>
-          <div className='card text-left mt-3'>
+          <div className="card text-left mt-3">
             <div className="card-body">
-              <h5 className='card-title'>
-                🌟 ¡Antes de usar esta herramienta, una pequeña reflexión!
-              </h5>
-              <p className='card-text'>
-                <b><a href='https://store.steampowered.com/app/2305520/Farlands/' target='_blank'>Farlands</a></b> es una experiencia única, si has llegado aquí es porque ya has jugado y he publicado la guía... llena de descubrimientos, desafíos y momentos que solo tienen sentido si los vives por ti mismo. Te animo encarecidamente a jugar el juego completo al menos una vez sin ayudas externas. La magia está en la exploración, en los errores, en las sorpresas… ¡y en construir tu propia historia!
+              <h5 className="card-title">🌟 ¡Antes de usar esta herramienta, una pequeña reflexión!</h5>
+              <p className="card-text">
+                <b>
+                  <a href="https://store.steampowered.com/app/2305520/Farlands/" target="_blank">
+                    Farlands
+                  </a>
+                </b>{' '}
+                es una experiencia única, si has llegado aquí es porque ya has jugado y he publicado la guía... llena de descubrimientos, desafíos y momentos que solo tienen sentido si los vives por ti mismo. Te animo encarecidamente a jugar el juego completo al menos una vez sin ayudas externas. La magia está en la exploración, en los errores, en las sorpresas… ¡y en construir tu propia historia!
               </p>
 
-              <p className='card-text'>
+              <p className="card-text">
                 <b>⚠️ Advertencia:</b>
-                <br />Esta utilidad está diseñada para editar partidas guardadas, lo que significa que puede contener <b>SPOILERS</b> de ítems, mecánicas, logros y contenido que forma parte del progreso natural del juego.
+                <br />
+                Esta utilidad está diseñada para editar partidas guardadas, lo que significa que puede contener <b>SPOILERS</b> de ítems, mecánicas, logros y contenido que forma parte del progreso natural del juego.
               </p>
-              <p className='card-text'>
+              <p className="card-text">
                 <b>🔧 ¿Para quién es esta herramienta?</b>
-                <br />Ideal para jugadores que ya completaron el juego o quieren comenzar una nueva partida con cierto progreso (por ejemplo, con herramientas mejoradas, inventario inicial, créditos, etc.), sin tener que repetir todo desde cero.
+                <br />
+                Ideal para jugadores que ya completaron el juego o quieren comenzar una nueva partida con cierto progreso (por ejemplo, con herramientas mejoradas, inventario inicial, créditos, etc.), sin tener que repetir todo desde cero.
               </p>
-              <p className='card-text'>
+              <p className="card-text">
                 🛑 Úsala bajo tu propia responsabilidad. No me hago responsable por partidas corruptas, spoilers no deseados o la pérdida de la experiencia original del juego.
               </p>
 
               <hr />
 
-              <p className='card-text'>
+              <p className="card-text">
                 <b>🤖 Sobre esta herramienta</b>
-                <br />Esta aplicación es un proyecto <b>sin ánimo de lucro</b>, desarrollado únicamente con fines demostrativos para explorar la potencia de las <b>IAs actuales</b> a la hora de leer, interpretar y modificar ficheros de datos de videojuegos. No ha sido creada para obtener ningún tipo de beneficio económico.
+                <br />
+                Esta aplicación es un proyecto <b>sin ánimo de lucro</b>, desarrollado únicamente con fines demostrativos para explorar la potencia de las <b>IAs actuales</b> a la hora de leer, interpretar y modificar ficheros de datos de videojuegos. No ha sido creada para obtener ningún tipo de beneficio económico.
               </p>
-              <p className='card-text'>
+              <p className="card-text">
                 <b>©️ Derechos de autor</b>
-                <br />Todas las imágenes, assets y contenido del juego son propiedad exclusiva de sus desarrolladores y de <b>Jandusoft</b>. Esta herramienta no está afiliada ni respaldada oficialmente por los creadores de Farlands.
+                <br />
+                Todas las imágenes, assets y contenido del juego son propiedad exclusiva de sus desarrolladores y de <b>Jandusoft</b>. Esta herramienta no está afiliada ni respaldada oficialmente por los creadores de Farlands.
               </p>
-              <p className='card-text'>
+              <p className="card-text">
                 <b>🔒 Privacidad</b>
-                <br />Las partidas cargadas en esta herramienta <b>no se registran, no se almacenan en ningún servidor ni se comparten</b> con terceros. Todo el procesamiento se realiza localmente en tu navegador.
+                <br />
+                Las partidas cargadas en esta herramienta <b>no se registran, no se almacenan en ningún servidor ni se comparten</b> con terceros. Todo el procesamiento se realiza localmente en tu navegador.
               </p>
-              <p className='card-text'>
+              <p className="card-text">
                 <b>💻 Código abierto</b>
-                <br />Si quieres explorar el código, contribuir o adaptar esta herramienta, el proyecto está disponible públicamente en GitHub:{' '}
-                <a href='https://github.com/GustavoMCh/FarlandsWebEditor' target='_blank' rel='noopener noreferrer'>
+                <br />
+                Si quieres explorar el código, contribuir o adaptar esta herramienta, el proyecto está disponible públicamente en GitHub:{' '}
+                <a href="https://github.com/GustavoMCh/FarlandsWebEditor" target="_blank" rel="noopener noreferrer">
                   github.com/GustavoMCh/FarlandsWebEditor
                 </a>
               </p>
 
               <br />
               ¡Disfruta Farlands… a tu manera, pero con conciencia! 🚀
-
             </div>
           </div>
 
-          <p>&nbsp;</p>
-          <h1 className="text-primary">📂 Carga tu partida</h1>
-          <div className="upload-section justify-content-center  position-relative">
-            <label htmlFor="saveFile" className="form-label h5">
-              💾 Selecciona tu archivo gamedata.dat:
-            </label>
-            <input
-              type="file"
-              id="saveFile"
-              className="form-control"
-              accept=".dat"
-              style={{ maxWidth: '400px', margin: '0 auto' }}
-              onChange={handleFileChange}
-            />
-            <div style={{ margin: "auto" }}>
+          <div className="upload-section justify-content-center position-relative p-5">
+            <div
+              className="position-relative p-4 rounded"
+              style={{ cursor: 'pointer' }}
+              onMouseEnter={() => {
+                const canvas = canvasRef.current;
+                if (!canvas || tileset.loading) return;
+                // Dibujar el estado "hover" (el borde verde)
+                const ctx = canvas.getContext('2d');
+                if (ctx && tileset.image) {
+                  ctx.clearRect(0, 0, canvas.width, canvas.height);
+                  // x=240, y=325 es el inicio del borde verde en Tileset_Menu.png según lógica previa
+                  ctx.drawImage(tileset.image, 240, 325, 255, 70, 0, 0, canvas.width, canvas.height);
+                }
+              }}
+              onMouseLeave={() => {
+                const canvas = canvasRef.current;
+                if (!canvas || tileset.loading) return;
+                tileset.drawOnCanvas(canvas); // Restaurar fondo normal
+              }}
+              onClick={() => document.getElementById('saveFile')?.click()}
+            >
+
+              <div className="position-relative" style={{ zIndex: 1 }}>
+                <label htmlFor="saveFile" className="form-label h4 text-white mb-3 shadow-text">
+                  💾 Selecciona tu archivo gamedata.dat
+                </label>
+                <input
+                  type="file"
+                  id="saveFile"
+                  className="d-none"
+                  accept=".dat"
+                  onChange={handleFileChange}
+                />
+                <p className="text-white-50 small">Haz clic aquí para buscar en tu equipo</p>
+              </div>
+            </div>
+            <div style={{ margin: 'auto' }}>
               <div className="alert alert-info p-1 m-1 shadow mt-2">
-                Ubicación recomendada{' '}
-                <span style={{ fontSize: 'small' }}>
-                  (pulsa sobre ella para copiarla)
-                </span>
-                :<br />
+                Ubicación recomendada <span style={{ fontSize: 'small' }}>(pulsa sobre ella para copiarla)</span>:<br />
                 <code
                   onClick={handleCopyPath}
-                  data-text="%USERPROFILE%\AppData\LocalLow\Jandusoft\Farlands\gamedata.dat"
-                  style={{
-                    cursor: 'pointer',
-                    display: 'inline-block',
-                    marginTop: '4px',
-                  }}
+                  style={{ cursor: 'pointer', display: 'inline-block', marginTop: '4px' }}
                 >
                   📋 %USERPROFILE%\AppData\LocalLow\Jandusoft\Farlands\gamedata.dat
                 </code>
-
-
-
               </div>
               <div className="d-flex justify-content-around bd-highlight mb-3">
                 <div className="p-2 bd-highlight">
-                  <canvas
-                    style={{ maxWidth: '255px', height: '255px', margin: '0 auto' }}
-                    ref={canvasRef2}
-                  ></canvas>
+                  <canvas style={{ maxWidth: '255px', height: '255px', margin: '0 auto' }} ref={canvasRef2}></canvas>
                 </div>
               </div>
             </div>
           </div>
         </>
       ) : (
-        /* Si SÍ hay savedData → mostramos un mensaje o nada */
         <div className="mt-5">
-          <h2 className="text-success">✅ Fichero cargado correctamente</h2>
-          {/* Opcional: puedes poner un botón para volver a cargar */}
-          <button
-            className="btn btn-outline-warning mt-3"
-            onClick={() => {
-              setSavedData(null);
-              setLoadedFromFile(false);
-              setCurrentSlotIndex(-1);
-              clearSaveData
-            }}
-          >
-            🔄 Cargar otro archivo
-          </button>
+          <div className="alert alert-success d-flex justify-content-between align-items-center">
+            <h4 className="mb-0">✅ Fichero cargado correctamente</h4>
+            <div className="d-flex gap-2">
+              {user && (
+                <button
+                  className="btn btn-primary shadow-sm"
+                  onClick={() => setShowShareModal(true)}
+                >
+                  🚀 Compartir Partida
+                </button>
+              )}
+              <button
+                className="btn btn-outline-warning"
+                onClick={() => {
+                  setSavedData(null);
+                  setLoadedFromFile(false);
+                  setCurrentSlotIndex(-1);
+                }}
+              >
+                🔄 Otro archivo
+              </button>
+            </div>
+          </div>
 
           <GameSelector />
         </div>
       )}
+
+      {showShareModal && (
+        <ShareSaveModal
+          saveData={savedData}
+          currentSlotIndex={currentSlotIndex}
+          onClose={() => setShowShareModal(false)}
+          onSuccess={() => alert('¡Partida enviada con éxito! Pendiente de aprobación.')}
+        />
+      )}
+
+
+      {/* Account Section - Always visible */}
+      <div className="mt-3 bg-dark p-3 rounded shadow-sm border border-secondary mb-4">
+        <div className="d-flex justify-content-between align-items-center mb-2">
+          <h5 className="mb-0 text-white-50">Farlands Explorer Account</h5>
+          <UserMenu />
+        </div>
+        {user && (
+          <div className="text-start mt-2 pt-2 border-top border-secondary">
+            <p className="text-muted small mb-1">
+              Agrega un mensaje (no es obligatorio, solo si deseas compartir tu partida con el resto de usuarios):
+            </p>
+            <div className="d-flex gap-2">
+              <input
+                type="text"
+                className="form-control form-control-sm bg-dark text-white border-secondary"
+                placeholder="Tu mensaje para la comunidad..."
+                maxLength={100}
+                value={publicMessage}
+                onChange={handleMessageChange}
+                onBlur={saveMessage}
+              />
+              {isSavingMessage && <span className="small text-muted align-self-center">...</span>}
+            </div>
+          </div>
+        )}
+      </div>
+
     </div>
   );
 }

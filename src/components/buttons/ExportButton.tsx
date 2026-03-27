@@ -1,6 +1,7 @@
 'use client';
 
 import { useSaveData } from '@/components/utils/useSaveData';
+import { copyToClipboard } from '@/lib/utils';
 
 export default function ExportButton() {
   const { savedData } = useSaveData();
@@ -35,41 +36,41 @@ export default function ExportButton() {
         <br /> ¡No sobrescribe el original!
         <br /> Recuerda reemplazarlo por :
         <code
-          onClick={(e) => {
+          onClick={async (e) => {
             const text = e.currentTarget.getAttribute('data-text') || '';
-            navigator.clipboard.writeText(text)
-              .then(() => {
-                const tooltip = document.createElement('span');
-                tooltip.className = 'copy-tooltip';
-                tooltip.textContent = `Texto copiado: ${text}`;
-                tooltip.style.cssText = `
-                  position: absolute;
-                  background-color: #00b894;
-                  color: white;
-                  padding: 6px 12px;
-                  border-radius: 4px;
-                  font-size: 12px;
-                  white-space: nowrap;
-                  z-index: 1000;
-                  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-                  animation: fadeInOut 1.5s ease-out;
-                  pointer-events: none;
-                  transform: translate(-50%, -100%);
-                  left: 50%;
-                  top: 50%;
-                `;
-                const rect = e.currentTarget.getBoundingClientRect();
-                const container = e.currentTarget.closest('.container-fluid') || document.body;
-                container.appendChild(tooltip);
-                tooltip.style.left = `${rect.left + rect.width / 2}px`;
-                tooltip.style.top = `${rect.top + rect.height / 2}px`;
-                setTimeout(() => {
-                  if (tooltip.parentNode) tooltip.remove();
-                }, 1500);
-              })
-              .catch(err => {
-                alert('No se pudo copiar el texto. Por favor, prueba manualmente.');
-              });
+            const success = await copyToClipboard(text);
+
+            if (success) {
+              const tooltip = document.createElement('span');
+              tooltip.className = 'copy-tooltip';
+              tooltip.textContent = `Texto copiado: ${text}`;
+              tooltip.style.cssText = `
+                position: absolute;
+                background-color: #00b894;
+                color: white;
+                padding: 6px 12px;
+                border-radius: 4px;
+                font-size: 12px;
+                white-space: nowrap;
+                z-index: 1000;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+                animation: fadeInOut 1.5s ease-out;
+                pointer-events: none;
+                transform: translate(-50%, -100%);
+                left: 50%;
+                top: 50%;
+              `;
+              const rect = e.currentTarget.getBoundingClientRect();
+              const container = e.currentTarget.closest('.container-fluid') || document.body;
+              container.appendChild(tooltip);
+              tooltip.style.left = `${rect.left + rect.width / 2}px`;
+              tooltip.style.top = `${rect.top + rect.height / 2}px`;
+              setTimeout(() => {
+                if (tooltip.parentNode) tooltip.remove();
+              }, 1500);
+            } else {
+              alert('No se pudo copiar el texto. Por favor, selecciona y copia manualmente.');
+            }
           }}
           data-text="%USERPROFILE%\\AppData\\LocalLow\\Jandusoft\\Farlands\\gamedata.dat"
         >
@@ -91,6 +92,6 @@ export default function ExportButton() {
         <br />
         Bueno he descubierto que Steam hace una copia del contenido de la carpeta, porque tenía más archivos de copias y si borro la carpeta me los vuelve a traer.
       </div>
-    </div>
+    </div >
   );
 }

@@ -3,6 +3,11 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style/globals.scss";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { IconDefinition } from '@fortawesome/fontawesome-common-types';
+
+library.add(fab as any);
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
